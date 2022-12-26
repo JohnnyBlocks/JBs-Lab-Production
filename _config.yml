@@ -4,7 +4,7 @@ title: "JohnnyBlocks's Corner"
 description: "Welcome to JohnnyBlocks's Corner  [Data Science | Video Gaming | SteamDeck | BikeLife | Vegan]"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+baseurl: ''
 google_analytics: 'G-SZXXH3RFKC'
 disqus: 'JohnnyBlocks'
 mailchimp-list: 
