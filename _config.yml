@@ -1,13 +1,13 @@
 # Site
-name: "SteamDeckBlog"
-title: "JohnnyBlocks's Steam Deck Blog"
-description: "Welcome to JohnnyBlocks's Steam Deck Blog and Collection of Resources and How To's to let you LEVEL-UP your Steam Deck."
+name: "JohnnyBlocks Corner"
+title: "JohnnyBlocks's Corner"
+description: "Welcome to JohnnyBlocks's Corner  [Data Science | Video Gaming | SteamDeck | BikeLife | Vegan]"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /mediumish-theme-jekyll
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+google_analytics: 'G-SZXXH3RFKC'
+disqus: 'JohnnyBlocks'
+mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
 
