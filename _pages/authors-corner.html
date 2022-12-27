@@ -18,7 +18,6 @@ permalink: "/authors-corner.html"
                 <div>"{{ author[1].tagline }}"</div>
                 <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
             </a>
-            <div class="excerpt">{{ author[1].bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>
                     {% if author[1].steam %}
@@ -52,6 +51,7 @@ permalink: "/authors-corner.html"
                         <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                 </div>
+                <div class="excerpt">{{ author[1].bio }}</div>
             </div>
             </div>
             </div>
