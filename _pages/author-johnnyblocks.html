@@ -7,23 +7,9 @@ permalink: "/author-johnnyblocks.html"
 <div class="row justify-content-center">
     <div class="col-md-8">        
         <div class="row align-items-center mb-5">
-                <div class="pr-3">
-                    <h2 class="mb-1 h4 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{page.url}}">{{ page.title }}</a>
-                    </h2>
-                    <p class="excerpt">
-                        <div class="d-flex justify-content-between">"{{ site.authors.JohnnyBlocks.tagline }}"</div>
-                        <div class="d-flex justify-content-between">{{ site.authors.JohnnyBlocks.bio }}</div>
-                        <div class="icon-block mt-2 d-flex justify-content-between"> 
-                            {% include social.html %}
-                        </div>
-                    </p>
-                </div>
-                <div class="col-md-3 pr-0 text-right">
-                    <a href="{{site.baseurl}}{{post.url}}">
-                        <img class="w-100" alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle">
-                    </a>
-                </div>
+
+        
+        
         <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
             {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
