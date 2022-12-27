@@ -44,7 +44,7 @@ defaults:
     values:
       layout: post
       author: JohnnyBlocks
-      avatar: /assets/images/avatar1.jpg
+      avatar: assets/images/avatar1.jpg
       
   # all pages
   - scope:
