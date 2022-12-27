@@ -6,7 +6,35 @@ permalink: "/author-johnnyblocks.html"
 <div class="container">
     <div class="row mt-3">
         <div class="col-md-8 main-loop">
- 
+<!--  -->
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+                <div class="pr-3">
+                    <h2 class="mb-1 h4 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{page.url}}">{{ post.title }}</a>
+                    </h2>
+                    <p class="excerpt">
+                       {{ page.excerpt  | strip_html | strip_newlines | truncate: 186}}
+                    </p>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        {% for category in page.categories %}
+                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                        {% endfor %}
+                        </span>
+                    </small>
+                    <small class="text-muted">
+                        {{ post.date | date: '%b %d, %Y' }}
+                    </small>
+                </div>
+                {% if post.image %}
+                <div class="col-md-3 pr-0 text-right">
+                    <a href="{{site.baseurl}}{{page.url}}">
+                    <img class="w-100" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+<!--  -->
             <div class="mb-5 d-flex justify-content-between main-loop-card">
                 <div class="pr-3">
                     <h2 class="mb-1 h4 font-weight-bold">
@@ -29,9 +57,8 @@ permalink: "/author-johnnyblocks.html"
                 <div class="col-md-3 pr-0 text-right">
                     <img class="w-100" alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle">
                 </div>
-
             </div>
-
+<!--  -->
             <h4 class="font-weight-bold spanborder"><span>Articles by {{page.title}}</span></h4>
         
             {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
