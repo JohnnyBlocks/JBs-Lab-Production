@@ -16,7 +16,7 @@ permalink: "/author-johnnyblocks.html"
                 <img alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle" height="100" width="100">
             </div>
         
-            <div class="icon-block mt-3 d-flex justify-content-between">  
+              
                 <div>
                     {% if site.authors.JohnnyBlocks.steam != '' %}
                         <a target="_blank" href="{{ site.authors.JohnnyBlocks.steam }}"><i class="fab fa-steam text-muted" aria-hidden="true"></i></a> &nbsp;
@@ -49,7 +49,7 @@ permalink: "/author-johnnyblocks.html"
                         <a target="_blank" href="{{ site.authors.JohnnyBlocks.site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                 </div>
-            </div>
+           
         </div>
         <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
             {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
