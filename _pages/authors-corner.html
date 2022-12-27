@@ -16,9 +16,9 @@ permalink: "/authors-corner.html"
                 <img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="auth-img rounded-circle" height="80" width="80">
                 <h4 class="text-dark mb-0">{{ author[1].name }}</h4>
                 <div>"{{ author[1].tagline }}"</div>
-                <div class="excerpt">{{ author[1].bio }}</div>
                 <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
             </a>
+            <div class="excerpt">{{ author[1].bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>
                     {% if author[1].steam %}
