@@ -23,21 +23,14 @@ authors:
       name:           JohnnyBlocks
       avatar:         assets/icons/JB.png
       bio:            "I am JohnnyBlocks.  Never be Game Over!<br />Data Scientist : Computer Scientist : Video&nbsp;Gamer : Vegan"
-      email:          jb@JohnnyBlocks.com
+      email:          jb+corner@JohnnyBlocks.com
       steam:          https://s.team/p/kcv-whdv
       github:         https://github.com/JohnnyBlocks
       twitter:
-      telegram:        https://telegram.me/JohnnyBlocks
+      telegram:       https://telegram.me/JohnnyBlocks
       instagram:      https://instagram.com/JohnnyBlocks_
       site:           https://JohnnyBlocks.com
 
-    # jane:
-    #   name:           Jane
-    #   site:           https://www.wowthemes.net
-    #   avatar:         /assets/images/avatar2.jpg
-    #   bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-    #   email:          fakemail@gmail.com
-    #   twitter:        https://twitter.com/wowthemesnet
  
 # Defaults
 defaults:
@@ -48,7 +41,7 @@ defaults:
     values:
       layout: post
       author: JohnnyBlocks
-      avatar: assets/images/avatar1.jpg
+      avatar: assets/icons/JB.png
       
   # all pages
   - scope:
