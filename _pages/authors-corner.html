@@ -16,40 +16,40 @@ permalink: "/authors-corner.html"
             <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}.html">
                 <h4 class="text-dark mb-0">{{ author[1].name }}</h4>
                 <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
-                <div class="excerpt">"{{ author[1].tagline }}"</div>
+                <div>"{{ author[1].tagline }}"</div>
             </a>
             <div class="excerpt">{{ author[1].bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>
                     {% if author[1].steam %}
-                        <a target="_blank" href="{{ author[1].steam }}"><i class="fab fa-steam text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].steam }}"><i class="fab fa-steam fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].github  %}
-                        <a target="_blank" href="{{ author[1].github }}"><i class="fab fa-github text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].github }}"><i class="fab fa-github  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].reddit  %}
-                        <a target="_blank" href="{{ author[1].reddit }}"><i class="fab fa-reddit text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].reddit }}"><i class="fab fa-reddit  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].discord  %}
-                        <a target="_blank" href="{{ author[1].discord }}"><i class="fab fa-discord text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].discord }}"><i class="fab fa-discord  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].linkedin  %}
-                        <a target="_blank" href="{{ author[1].linkedin }}"><i class="fab fa-linkedin text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].linkedin }}"><i class="fab fa-linkedin  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].twitter  %}
-                        <a target="_blank" href="{{ author[1].twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].twitter }}"><i class="fab fa-twitter  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].telegram  %}
-                        <a target="_blank" href="{{ author[1].telegram }}"><i class="fab fa-telegram text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].telegram }}"><i class="fab fa-telegram  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].instagram   %}
-                        <a target="_blank" href="{{ author[1].instagram }}"><i class="fab fa-instagram text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].instagram }}"><i class="fab fa-instagram  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].youtube  %}
-                        <a target="_blank" href="{{ author[1].youtube }}"><i class="fab fa-youtube text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].youtube }}"><i class="fab fa-youtube  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                     {% if author[1].site %}
-                        <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe  fa-2x" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                 </div>
             </div>
