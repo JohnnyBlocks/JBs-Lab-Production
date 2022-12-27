@@ -1,6 +1,6 @@
 ---
 title: "Buy me a coffee"
-permalink: "/buy-me-a-coffee/"
+permalink: "/buy-me-a-coffee.html"
 ---
 
 Hi! I am Johnnyblocks, Data Scientist and Video Gamer. In my free time I like to make content to help people with my same interests.
