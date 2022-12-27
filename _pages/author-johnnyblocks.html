@@ -7,7 +7,35 @@ permalink: "/author-johnnyblocks.html"
     <div class="row mt-3">
         <div class="col-md-8 main-loop">
 
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+                <div class="pr-3">
+                    <h2 class="mb-1 h4 font-weight-bold">
+                        {{ page.title }}
+                    </h2>
+                    <p class="excerpt">
+                        "{{ site.authors.JohnnyBlocks.tagline }}"
+                    </p>
+                    <small class="d-block text-muted">
+                        <span class="catlist">
+                        text line
+                        </span>
+                    </small>
+                    <small class="text-muted">
+                        text line
+                    </small>
+                </div>
+                <div class="col-md-3 pr-0 text-right">
+                    <img alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle" height="100" width="100">
+                </div>
 
+            </div>
+
+            <h4 class="font-weight-bold spanborder"><span>Articles by {{page.title}}</span></h4>
+        
+            {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
 
  
             
