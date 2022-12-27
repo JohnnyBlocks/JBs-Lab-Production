@@ -10,12 +10,12 @@ permalink: "/author-johnnyblocks.html"
             
             <h4 class="font-weight-bold spanborder"><span>Articles by {{page.title}}</span></h4>
             
-    
+     
             {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
             {% include main-loop-card.html %}
             {% endfor %}
-            
+
             <div class="mt-5">
              <!-- Pagination links -->
                 {% if paginator.total_pages > 1 %}
