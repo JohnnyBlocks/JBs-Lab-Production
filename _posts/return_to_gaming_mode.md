@@ -13,7 +13,7 @@ This is part of a series on themeing your Steam Deck desktop experience.  This p
 ## Clean Desktop
 
 My desktop layout is in 'Desktop' mode so I do not see icons.  This left me without the instant access to the '**Return to Gaming Mode**' shortcut.
-![screenshot](../media/desktop_matrix.png)  
+![screenshot]({{ site.baseurl }}/assets/images/desktop_matrix.png)  
 
 ### Desktop Shortcut
 
