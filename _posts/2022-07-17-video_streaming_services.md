@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
+author: JohnnyBlocks
 title: Add Streaming Services
 category: HowTo
-tags: SteamDeck SteamOS StreamingServices
+tags: [ SteamDeck, SteamOS, StreamingServices ]
 permalink: /:categories/:title:output_ext
 ---
 
