@@ -10,39 +10,8 @@ permalink: "/author-johnnyblocks.html"
             <div class="col-md-9">
                 <h2 class="font-weight-bold">{{page.title}} <span class="small btn btn-outline-success btn-sm btn-round"><a href="{{ site.authors.JohnnyBlocks.steam }}">Follow</a></span><a class="text-dark ml-1" target="_blank" href="https://steam.johnnyblocks.com"><i class="fab fa-steam"></i>Steam</a></h2>
                 <p class="excerpt">{{ site.authors.JohnnyBlocks.tagline }}</p>
-
-                    <div>
-                        {% if site.authors.JohnnyBlocks.steam %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.steam }}"><i class="fab fa-steam text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.github  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.github }}"><i class="fab fa-github text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.reddit  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.reddit }}"><i class="fab fa-reddit text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.discord  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.discord }}"><i class="fab fa-discord text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.linkedin  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.linkedin }}"><i class="fab fa-linkedin text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.twitter  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.telegram %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.telegram }}"><i class="fab fa-telegram text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.instagram  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.instagram }}"><i class="fab fa-instagram text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.youtube  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.youtube }}"><i class="fab fa-youtube text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                        {% if site.authors.JohnnyBlocks.site  %}
-                            <a target="_blank" href="{{ site.authors.JohnnyBlocks.site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
-                        {% endif %}
-                    </div>
+                {% include social.html %}
+                   
      
             </div>
             <div class="col-md-3 text-right">
