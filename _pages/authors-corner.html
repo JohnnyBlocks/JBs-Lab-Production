@@ -15,6 +15,7 @@ permalink: "/authors-corner.html"
             <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}.html">
                 <img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="auth-img rounded-circle" height="80" width="80">
                 <h4 class="text-dark mb-0">{{ author[1].name }}</h4>
+                <div class="excerpt">{{ author[1].bio }}</div>
                 <div>"{{ author[1].tagline }}"</div>
                 <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
             </a>
@@ -51,7 +52,6 @@ permalink: "/authors-corner.html"
                         <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                 </div>
-                <div class="excerpt">{{ author[1].bio }}</div>
             </div>
             </div>
             </div>
