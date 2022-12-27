@@ -1,5 +1,7 @@
 ---
 title: "Privacy Policy"
+layout: default
+author: JohnnyBlocks
 permalink: "/privacy-policy.html"
 ---
 
