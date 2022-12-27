@@ -9,31 +9,29 @@ permalink: "/author-johnnyblocks.html"
 
             <div class="mb-5 d-flex justify-content-between main-loop-card">
                 <div class="pr-3">
-                    <h2 class="mb-1 h4 font-weight-bold">
+                    <h1 class="mb-1 h4 font-weight-bold">
                         {{ page.title }}</a>
-                    </h2>
+                    </h1>
                     <p class="excerpt">
                         "{{ site.authors.JohnnyBlocks.tagline }}"
                     </p>
                     <small class="d-block text-muted">
                         <span class="catlist">
-                        text line
+                            {% include social.html %}
                         </span>
                     </small>
                     <small class="text-muted">
                         text line
                     </small>
                 </div>
-                {% if post.image %}
-                    <div class="col-md-3 pr-0 text-right">
+                <div class="col-md-3 pr-0 text-right">
                     <img alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle" height="100" width="100">
-                    </div>
-                {% endif %}
+                </div>
             </div>
 
             <h4 class="font-weight-bold spanborder"><span>Articles by {{page.title}}</span></h4>
         
-            {% assign posts = site.posts %}
+            {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
             {% include main-loop-card.html %}
             {% endfor %}
