@@ -1,8 +1,8 @@
 ---
 layout: post
 author: JohnnyBlocks
-title: Modify The Desktop Folder and Add Widgets
-categories: [ How-To ]
+title: Hide or Show Desktop Icons and Add Widgets
+categories: [ How-To, Test ]
 tags: [ SteamDeck, SteamOS ]
 permalink: /:categories/:title:output_ext
 ---
