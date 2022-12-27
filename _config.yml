@@ -1,8 +1,8 @@
 # Site
-name: "JB's Corner"
+name: "JohnnyBlocks's Corner"
 description: "JohnnyBlock's Corner - Video Games - SteamDeck - Computer Science - Data Science"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/icons/favicon.ico'
 baseurl: ''
 disqus: 'JohnnyBlocks'
 email: 'jb@JohnnyBlocks.com'
@@ -23,7 +23,7 @@ authors:
       name:           JohnnyBlocks
       site:           https://JohnnyBlocks.com
       avatar:         /assets/images/avatar1.jpg
-      bio:            "I am JohnnyBlocks.  Never be Game Over!"
+      bio:            "I am JohnnyBlocks.  Never be Game Over!\nData Scientist : Computer Scientist : Video Gamer : Vegan"
       email:          jb@JohnnyBlocks.com
       twitter:        
 
