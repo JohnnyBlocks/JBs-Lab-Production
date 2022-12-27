@@ -6,6 +6,9 @@
         {% if author[1].github != ''  %}
             <a target="_blank" href="{{ author[1].github }}"><i class="fab fa-github text-muted" aria-hidden="true"></i></a> &nbsp;
         {% endif %}
+        {% if author[1].reddit != blank  %}
+            <a target="_blank" href="{{ author[1].reddit }}"><i class="fab fa-reddit text-muted" aria-hidden="true"></i></a> &nbsp;
+        {% endif %}
         {% if author[1].discord != blank  %}
             <a target="_blank" href="{{ author[1].discord }}"><i class="fab fa-discord text-muted" aria-hidden="true"></i></a> &nbsp;
         {% endif %}
