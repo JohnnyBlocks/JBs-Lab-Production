@@ -2,7 +2,7 @@
 layout: post
 author: JohnnyBlocks
 title: Hide or Show Desktop Icons and Add Widgets
-categories: [ How-To, Test ]
+category: How-To
 tags: [ SteamDeck, SteamOS ]
 permalink: /:categories/:title:output_ext
 ---

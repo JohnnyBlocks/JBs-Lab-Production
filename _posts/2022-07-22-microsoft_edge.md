@@ -2,7 +2,7 @@
 layout: post
 author: JohnnyBlocks
 title: Add The Microsoft Edge Browser
-categories: [ How-To ]
+category: How-To
 tags: [ SteamDeck, SteamOS, MicroSoft ]
 permalink: /:categories/:title:output_ext
 ---
