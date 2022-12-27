@@ -9,8 +9,8 @@ permalink: "/author-johnnyblocks.html"
         <div class="row align-items-center mb-5">
             <div class="col-md-9">
                 <h2 class="font-weight-bold">{{page.title}}</h2>
-                <p class="excerpt">"{{ site.authors.JohnnyBlocks.tagline }}"</p>
-                <p class="excerpt">"{{ site.authors.JohnnyBlocks.bio }}"</p>
+                <div class="d-flex justify-content-between">"{{ site.authors.JohnnyBlocks.tagline }}"</div>
+                <div class="d-flex justify-content-between">{{ site.authors.JohnnyBlocks.bio }}</div>
                 <div class="icon-block mt-2 d-flex justify-content-between"> 
                     {% include social.html %}
                 </div>
