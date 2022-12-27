@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How To Modify The Desktop Folder and Add Widgets
-category: Guides
-tags: HowTo Guide Desktop Widgets
+title: Modify The Desktop Folder and Add Widgets
+category: HowTo
+tags: SteamDeck SteamOS
 permalink: /:categories/:title:output_ext
 ---
 

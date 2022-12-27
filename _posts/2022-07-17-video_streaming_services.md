@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How To Add Streaming Services
-category: Guides
-tags: HowTo Guide Streaming
+title: Add Streaming Services
+category: HowTo
+tags: SteamDeck SteamOS StreamingServices
 permalink: /:categories/:title:output_ext
 ---
 

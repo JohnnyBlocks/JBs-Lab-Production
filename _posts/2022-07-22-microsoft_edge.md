@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How To Add The Microsoft Edge Browser
-category: Guides
-tags: HowTo Guide Browser
+title: Add The Microsoft Edge Browser
+category: HowTo
+tags: SteamDeck SteamOS MicroSoft
 permalink: /:categories/:title:output_ext
 ---
 
