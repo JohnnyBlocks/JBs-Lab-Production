@@ -6,7 +6,7 @@ favicon: 'assets/icons/favicon.ico'
 baseurl: ''
 disqus: 'JohnnyBlocks'
 email: 'jb@JohnnyBlocks.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: 'https://mailchi.mp/070704eeeaa2/corner-news-letter'
 
 include: ["_pages"]
 permalink: /:title/
