@@ -20,13 +20,22 @@ permalink: "/authors-list.html"
             </a>
             <div class="icon-block mt-3 d-flex justify-content-between">  
             <div>
-                {% if author[1].steam != ""  %}
+                {% if !author[1].steam == blank  %}
                     <a target="_blank" href="{{ author[1].steam }}"><i class="fab fa-steam text-muted" aria-hidden="true"></i></a>  &nbsp;
                 {% endif %}
-                {% if author[1].twitter != ""  %}
+                {% if !author[1].github == blank  %}
+                    <a target="_blank" href="{{ author[1].github }}"><i class="fab fa-steam text-muted" aria-hidden="true"></i></a>  &nbsp;
+                {% endif %}
+                {% if !author[1].twitter == blank  %}
                     <a target="_blank" href="{{ author[1].twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a>  &nbsp;
                 {% endif %}
-                {% if author[1].site != ""  %}
+                {% if !author[1].telegram == blank  %}
+                    <a target="_blank" href="{{ author[1].telegram }}"><i class="fab fa-telegram text-muted" aria-hidden="true"></i></a>  &nbsp;
+                {% endif %}
+                {% if !author[1].instagam == blank  %}
+                    <a target="_blank" href="{{ author[1].instagam }}"><i class="fab fa-instagam text-muted" aria-hidden="true"></i></a>  &nbsp;
+                {% endif %}
+                {% if !author[1].site == blank  %}
                     <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
                 {% endif %}
             </div>
