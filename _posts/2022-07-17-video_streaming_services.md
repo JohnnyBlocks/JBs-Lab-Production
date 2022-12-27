@@ -2,7 +2,7 @@
 layout: post
 author: JohnnyBlocks
 title: Add Streaming Services
-category: HowTo
+categories: [ How-To ]
 tags: [ SteamDeck, SteamOS, StreamingServices ]
 permalink: /:categories/:title:output_ext
 ---

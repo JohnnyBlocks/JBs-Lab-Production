@@ -2,7 +2,7 @@
 layout: post
 author: JohnnyBlocks
 title: Modify The Desktop Folder and Add Widgets
-category: HowTo
+categories: [ How-To ]
 tags: [ SteamDeck, SteamOS ]
 permalink: /:categories/:title:output_ext
 ---

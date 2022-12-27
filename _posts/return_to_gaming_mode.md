@@ -2,8 +2,8 @@
 layout: post
 author: JohnnyBlocks
 title: How To Add 'Return to Gaming Mode' to Application Menu
-category: HowTo
-tags: [ SteamDeck ]
+categories: [ How-To ]
+tags: [ SteamDeck ] 
 permalink: /:categories/:title:output_ext
 ---
 
