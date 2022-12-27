@@ -4,7 +4,6 @@ author: JohnnyBlocks
 title: How To Add 'Return to Gaming Mode' to Application Menu
 category: How-To
 tags: [ SteamDeck ] 
-permalink: /:categories/:title:output_ext
 ---
 
 This is part of a series on themeing your Steam Deck desktop experience.  This part will cover adding a few ways to add a '**Return to Gaming Mode**' shortcut into your Application Launcher.

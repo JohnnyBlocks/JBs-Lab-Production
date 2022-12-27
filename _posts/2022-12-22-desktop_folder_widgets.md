@@ -4,7 +4,6 @@ author: JohnnyBlocks
 title: Hide or Show Desktop Icons and Add Widgets
 category: How-To
 tags: [ SteamDeck, SteamOS ]
-permalink: /:categories/:title:output_ext
 ---
 
 This is part of a series on themeing your Steam Deck desktop experience.  This part will cover the Desktop Folder and how to add widgets.
