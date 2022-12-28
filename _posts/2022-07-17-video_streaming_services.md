@@ -1,10 +1,10 @@
 ---
-layout: post
 author: JohnnyBlocks
-title: Add Streaming Services
-image: assets/images/streaming-services.jpg
 category: How-To
-tags: [ SteamDeck, SteamOS, StreamingServices ]
+title: Add Video Streaming Services
+tags: [ SteamDeck ]
+permalink: add-video-streaming-services.html
+image: assets/images/streaming-services.jpg
 ---
 
 This is the process to add popular streaming services to the SteamDeck as non-steam games.  The process works for any stream service that is accessible via chrome on windows PC.  It will create a dedicated shortcut that can be run as a steam game, allowing you to stream content full screen.

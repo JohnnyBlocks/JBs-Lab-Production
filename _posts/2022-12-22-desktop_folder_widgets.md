@@ -1,9 +1,9 @@
 ---
 author: JohnnyBlocks
 category: How-To
-tags: [ sticky, SteamDeck, SteamOS ]
 title: Hide or Show Desktop Icons and Add Widgets
-permalink: "hide-show-icons-desktop-widgets.html"
+tags: [ SteamDeck, sticky, featured ]
+permalink: hide-show-icons-desktop-widgets.html
 image: assets/images/neofetch-202212.png
 ---
 
