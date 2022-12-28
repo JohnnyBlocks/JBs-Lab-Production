@@ -11,10 +11,13 @@
 		{% for category in post.categories %}
 		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
 		{% endfor %}
+		{% for tag in post.tags %}
+			<a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+		{% endfor %}
 		</span>
 	</small>
 	<small class="text-muted">
-		{{ post.date | date: '%b %d, %Y' }} - <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a>
+		<a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%b %d, %Y' }}
 	</small>
 </div>
 {% if post.image %}
