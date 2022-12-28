@@ -2,7 +2,7 @@
 author: JohnnyBlocks
 category: How-To
 title: Hide or Show Desktop Icons and Add Widgets
-tags: [ SteamDeck, featured ]
+tags: [ SteamDeck, Featured ]
 permalink: hide-show-icons-desktop-widgets.html
 image: assets/images/desktop_matrix.png
 ---
