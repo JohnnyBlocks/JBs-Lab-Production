@@ -13,5 +13,3 @@ Thank you so much!  <a class="btn btn-danger" href="https://www.buymeacoffee.com
 ## Glorious Contributors
 
 - ::cricket sounds::
-
-
