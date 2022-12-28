@@ -4,7 +4,7 @@ category: How-To
 title: Hide or Show Desktop Icons and Add Widgets
 tags: [ SteamDeck, featured ]
 permalink: hide-show-icons-desktop-widgets.html
-image: assets/images/desktop-matrix.png
+image: assets/images/desktop_matrix.png
 ---
 
 This is part of a series on themeing your Steam Deck desktop experience.  This part will cover the Desktop Folder and how to add widgets.
