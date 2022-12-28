@@ -10,12 +10,12 @@ permalink: "/reviews/index.html"
         <div class="col-md-8">
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
           
-          {% assign posts = site.posts | where: "categories", "How-To" %}
+          {% assign posts = site.posts | where: "categories", "Reviews" %}
 
-          {% for post in posts | where:"categories", "How-To" %}
+          {% for post in posts | where:"categories", "Reviews" %}
             {% include main-loop-card.html %}
           {% else %}
-            There are no Guides.
+            There are no Reviews.
           {% endfor %} 
 
         </div>
