@@ -137,7 +137,7 @@ pagination:
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
+{% if post.tags contains "Sticky" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
@@ -147,17 +147,19 @@ pagination:
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in post.categories %}
-                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
-                        {% endfor %}
-                        <span class="sep"> : Topics:</span> 
-                        {% for tag in post.tags %}
-                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
-                        {% endfor %}
-                        </span>
-                    </small>
+            </div>
+            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                <small class="d-block text-muted">
+                    In <span class="catlist">
+                    {% for category in post.categories %}
+                        <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                    {% endfor %}
+                    <span class="sep"> : Topics:</span> 
+                    {% for tag in post.tags %}
+                        <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                    {% endfor %}
+                    </span>
+                </small>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
             </div>
