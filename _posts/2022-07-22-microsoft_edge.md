@@ -5,7 +5,6 @@ title: Add The Microsoft Edge Browser
 image: assets/images/microsoft-edge-water.jpg
 category: How-To
 tags: [ SteamDeck, SteamOS, MicroSoft ]
-permalink: /:categories/add-microsoft-edge/
 ---
 
 This is the process to add the **Microsoft Edge** browser to your Steam Deck.  
