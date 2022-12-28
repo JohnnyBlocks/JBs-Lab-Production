@@ -14,7 +14,7 @@
 			<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a><span class="sep">, </span>	
 		{% endfor %}
 		{% for tag in post.tags %}
-			<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+			Topics: <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
 		{% endfor %}
 		</span>
 	</small>
