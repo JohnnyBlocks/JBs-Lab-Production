@@ -9,13 +9,13 @@ tags: [ featured, SteamDeck, SteamOS ]
 
 This is part of a series on themeing your Steam Deck desktop experience.  This part will cover the Desktop Folder and how to add widgets.
 
-<!--more-->
-
 ## Matrix Inspired
 
 I'm using a [Matrix boot animation](https://steamdeckrepo.com/post/PBVwP/the_matrix_intro_by_knightmd) from [KnightMD](https://steamdeckrepo.com/user/71) so I decided to theme my desktop experience to match.  This is my current desktop setup.
 
 ![screenshot]({{ site.baseurl }}/assets/images/desktop_matrix.png)  
+
+<!--more-->
 
 ### Hide Desktop Icons
 

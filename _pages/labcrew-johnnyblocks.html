@@ -29,31 +29,6 @@ permalink: "/labcrew-johnnyblocks.html"
                 </div>
             </div>
 
-<!--  
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-                <div class="pr-3">
-                    <h2 class="mb-1 h4 font-weight-bold">
-                        {{ page.title }}
-                    </h2>
-                    <small class="d-block text-muted">
-                        <span class="excerpt">
-                            "{{ site.authors.JohnnyBlocks.tagline }}"
-                        </span>
-                    </small>
-                    <small class="d-block mb-1">
-                        <span class="excerpt">
-                            {{ site.authors.JohnnyBlocks.bio }}
-                        </span>
-                    </small>
-                    <small class="text-muted">
-                        {% include social.html %}
-                    </small>
-                </div>
-                <div class="col-md-3 pr-0 text-right">
-                    <img class="w-100" alt="{{ site.authors.JohnnyBlocks.name }}" src="{{site.baseurl}}/{{ site.authors.JohnnyBlocks.avatar }}" class="rounded-circle">
-                </div>
-            </div>
-  -->
             <h4 class="font-weight-bold spanborder"><span>Articles by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
             {% assign posts = site.posts | where:"author","JohnnyBlocks" %}

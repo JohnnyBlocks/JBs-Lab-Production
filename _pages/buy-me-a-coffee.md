@@ -10,6 +10,6 @@ I will add your name to the list below to show my gratitude.  Any donation goes 
 
 Thank you so much!  <a class="btn btn-danger" href="https://www.buymeacoffee.com/JohnnyBlocks">Buy me a coffee</a>
 
-## Glorious Contributors
+### Glorious Contributors
 
 - ::cricket sounds::
