@@ -10,6 +10,7 @@ mailchimp-list: 'https://mailchi.mp/070704eeeaa2/corner-news-letter'
 
 include: ["_pages"]
 permalink: /:categories/:title/
+excerpt_separator: <!--more-->
 
 # Plugins
 plugins: 
