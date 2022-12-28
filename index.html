@@ -92,12 +92,13 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in third_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ third_post.date | date: '%b %d, %Y' }}
+                        <span class="sep"> : Topics:</span> 
+                        {% for tag in third_post.tags %}
+                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% endfor %}
+                        </span>
                     </small>
                 </div>
             </div>
@@ -119,12 +120,13 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in fourth_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ fourth_post.date | date: '%b %d, %Y' }}
+                        <span class="sep"> : Topics:</span> 
+                        {% for tag in fourth_post.tags %}
+                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% endfor %}
+                        </span>
                     </small>
                 </div>
             </div>
@@ -145,6 +147,17 @@ pagination:
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        {% for category in post.categories %}
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                        {% endfor %}
+                        <span class="sep"> : Topics:</span> 
+                        {% for tag in post.tags %}
+                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% endfor %}
+                        </span>
+                    </small>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
             </div>
