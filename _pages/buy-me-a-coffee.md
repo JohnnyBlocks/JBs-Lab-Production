@@ -3,10 +3,15 @@ title: "Buy me a coffee"
 permalink: "/buy-me-a-coffee.html"
 ---
 
-Hi! I am Johnnyblocks, Data Scientist and Video Gamer. In my free time I like to make content to help people with my same interests.
+Hi! I am JohnnyBlocks, Data Scientist and Video Gamer. In my free time I like to make content to help people with my same interests.
 
-I hope you have enjoyed my content or found some of it useful.  If you'd like to reward my work, I would be honored. 
+I hope you have enjoyed my content or found some of it useful.  If you'd like to reward my work, I would be honored.
+I will add your name to the list below to show my gratitude.  Any donation goes back into the site and content.
 
-Thank you so much!
+Thank you so much!  <a class="btn btn-danger" href="https://www.buymeacoffee.com/JohnnyBlocks">Buy me a coffee</a>
 
-<a class="btn btn-danger" href="https://www.buymeacoffee.com/JohnnyBlocks">Buy me a coffee</a>
+## Glorious Contributors
+
+- ::cricket sounds::
+
+
