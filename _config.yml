@@ -10,7 +10,7 @@ email: 'jb@JohnnyBlocks.com'
 mailchimp-list: 'https://mailchi.mp/070704eeeaa2/corner-news-letter'
 
 include: ["_pages"]
-permalink: /:categories/:title.html
+permalink: "/:categories/:title:output_ext"
 
 excerpt_separator: <!--more-->
 
