@@ -28,9 +28,9 @@ pagination:
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
-                {% for category in latest_post.categories %}
+            {% for category in latest_post.categories %}
                 <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
-                {% endfor %}
+            {% endfor %}
             <span class="sep"> : Topics:</span> 
             {% for tag in latest_post.tags %}
                 <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
@@ -38,7 +38,7 @@ pagination:
             </span>
         </small>
         <small class="text-muted">
-            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%y-%m-%d' }}
+            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%Y-%m-%d' }}
         </small>
     </div>
     </div>
@@ -64,12 +64,13 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in second_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ second_post.date | date: '%b %d, %Y' }}
+                        <span class="sep"> : Topics:</span> 
+                        {% for tag in second_post.tags %}
+                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% endfor %}
+                        </span>
                     </small>
                 </div>
             </div>
