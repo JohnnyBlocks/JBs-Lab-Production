@@ -11,7 +11,7 @@
 			{% for category in post.categories %}
 			<a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
 			{% endfor %}
-		<span class="sep"> - Topics:</span> 
+		<span class="sep"> : Topics:</span> 
 		{% for tag in post.tags %}
 			<a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
 		{% endfor %}
