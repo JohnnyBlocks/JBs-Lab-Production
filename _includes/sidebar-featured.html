@@ -7,13 +7,17 @@
                 <h6 class="font-weight-bold">
                     <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
                 </h6>
-                <span class="d-block text-muted">
+                <small class="d-block text-muted">
                     In <span class="catlist">
                     {% for category in post.categories %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                        <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                    {% endfor %}
+                    <span class="sep"> : Topics:</span> 
+                    {% for tag in post.tags %}
+                        <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                     </span>
-                </span>
+                </small>
             </span>
             </li>                
         {% endfor %}   
