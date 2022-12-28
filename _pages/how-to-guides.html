@@ -6,10 +6,15 @@ permalink: "/how-to-guides.html"
 
 <div class="container">
     <div class="row justify-content-center">
+
         <div class="col-md-8">
-        <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
-            
-        {% for tag in site.tags %} 
+          <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
+        
+          {% assign guides = site.posts | where:"category","How-To" %}
+
+
+              
+        {% for tag in guides %} 
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
             
         {% assign pages_list = tag[1] %}
@@ -25,7 +30,7 @@ permalink: "/how-to-guides.html"
         {% assign pages_list = nil %}
         {% assign group = nil %}
 
-        {% endfor %}
+        {% endfor %} 
 
         </div>
         
