@@ -13,7 +13,7 @@ pagination:
     
     <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
-    <div class="col-md-6">
+    <div class="col-md-6 mt-1">
     <div class="card border-0 mb-4 box-shadow">   
     <a href="{{site.baseurl}}{{latest_post.url}}">
     <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
@@ -23,18 +23,22 @@ pagination:
     <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
     </h2>
     <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+        {{ latest_post.excerpt | strip_html | strip_newlines }}
     </p>
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                {% for category in post.categories %}
+                <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                 {% endfor %}
-                </span>                   
+            <span class="sep"> : Topics:</span> 
+            {% for tag in post.tags %}
+                <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+            {% endfor %}
+            </span>
         </small>
         <small class="text-muted">
-            {{ latest_post.date | date: '%b %d, %Y' }}
+            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%b %d, %Y' }}
         </small>
     </div>
     </div>
