@@ -9,10 +9,10 @@ permalink: "/how-to-guides.html"
         <div class="col-md-8">
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Tags</h1>
             
-        {% for tag in site.tags %} 
+        {% for tag in site.tags | where:"category","How-To"  %} 
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
             
-        {% assign pages_list = tag[1] | where:"category","How-To" %}
+        {% assign pages_list = tag[1]%}
         {% for post in pages_list %}
         {% if post.title != null %}
           {% if group == null or group == post.group %}
