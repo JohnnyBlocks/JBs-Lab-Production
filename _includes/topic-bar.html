@@ -1,7 +1,8 @@
 <!-- Tags -->
-<div class="mb-0">
-    <span class="nav-list">
-        <span>Topics: </span>
+<div class="container">
+    <a title="{{site.title}} : {{site.description}}" class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
+    <strong>Topics:</strong></a>
+    <ul class="navbar-nav mr-auto d-flex align-items-center">
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
@@ -14,8 +15,8 @@
                     <a id="{{ tag[0] | downcase }}" class="nav-link sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
                 </li>
                 {% endif%}           
-        {% endif %}    
-         {% endfor %}
-    </span>
+            {% endif %}    
+        {% endfor %}
+    </ul>
 </div>
 
