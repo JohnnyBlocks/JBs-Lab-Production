@@ -1,16 +1,17 @@
-<div class="container">
-    <span >
+<div class="container">test:
+    <span >again:
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
             {% assign posts = tag | last %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
-                    <a href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] | downcase }}</a>
+                    <a class="text-dark" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] | downcase }}</a>
                 {% else %}
-                    <a href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] | downcase }}</a>
+                    <a class="text-dark" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] | downcase }}</a>
                 {% endif%}           
             {% endif %}    
         {% endfor %}
     </span>
 </div>
+{{current[1]}}
