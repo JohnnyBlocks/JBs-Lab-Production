@@ -11,10 +11,10 @@ permalink: "/the-lab/topics.html"
        
             {% assign sorted_tags = site.tags | sort %}
             {% for tag in sorted_tags %}
-                {% assign t = tag | first %}
+                {% assign t = tag | first %} 
                 {% assign posts = tag | last %}
-                <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
-                
+                <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}{{ size }}</span></h4>
+
                 {% for post in posts %}
                 {% if post.title != null %}
                 {% if group == null or group == post.group %}
