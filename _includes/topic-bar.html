@@ -5,7 +5,9 @@
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
             {% assign posts = tag | last %}
+            {% if tag != "Featured" and tag != 'Sticky'  %}
              <a id="{{ tag[0] | downcase }}" class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/the-lab/topics.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
-        {% endfor %}
+        {% endif %}    
+         {% endfor %}
     </span>
 </div>
