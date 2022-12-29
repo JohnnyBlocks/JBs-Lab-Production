@@ -5,6 +5,7 @@ title: Add The Microsoft Edge Browser
 tags: [ SteamDeck ]
 permalink: add-microsoft-edge-browser.html
 image: assets/images/microsoft-edge-water.jpg
+rating: 4.5
 ---
 
 This is the process to add the **Microsoft Edge** browser to your Steam Deck.  
