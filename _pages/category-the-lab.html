@@ -1,8 +1,12 @@
 ---
-title: "How-To Guides"
-layout: default
-permalink: "/how-to/index.html"
+title: "Welcome to the Laboratory"
+layout: page-sidebar
+permalink: "/about-the-lab.html"
+image: "assets/images/steamdev.gif"
+comments: false
 ---
+
+<i class="fab fa-gamepad-modern"></i> [Privacy Policy]({{site.baseurl}}/privacy-policy.html)
 
 <div class="container">
     <div class="row justify-content-center">
@@ -10,11 +14,9 @@ permalink: "/how-to/index.html"
         <div class="col-md-8">
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
           
-          {% assign posts = site.posts | where: "categories", "How-To" %}
+          {% assign posts = site.posts | where: "categories", "The-Lab" %}
           {% for post in posts %}
             {% include main-loop-card.html %}
-          {% else %}
-            There are no Guides.
           {% endfor %} 
 
         </div>
