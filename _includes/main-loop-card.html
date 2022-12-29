@@ -9,7 +9,7 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 			{% for category in post.categories %}
-			<a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+			<a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
 			{% endfor %}
 		<span class="sep"> : Topics:</span> 
 		{% for tag in post.tags %}
@@ -18,7 +18,7 @@
 		</span>
 	</small>
 	<small class="text-muted">
-		By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
+		By <a href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
 	</small>
 </div>
 {% if post.image %}
