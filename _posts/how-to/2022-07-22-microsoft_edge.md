@@ -3,7 +3,7 @@ author: JohnnyBlocks
 category: How-To
 title: Add The Microsoft Edge Browser
 tags: [ SteamDeck ]
-permalink: add-microsoft-edge-browser.html
+permalink: /:categories/add-microsoft-edge-browser.html
 image: assets/images/microsoft-edge-water.jpg
 rating: 4.5
 ---

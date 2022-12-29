@@ -3,7 +3,7 @@ author: JohnnyBlocks
 category: How-To
 title: How To Add 'Return to Gaming Mode' to Application Menu
 tags: [ SteamDeck ]
-permalink: add-return-to-gaming-mode.html
+permalink: /:categories/add-return-to-gaming-mode.html
 image: assets/images/xxxxxxxx.jpg
 ---
 
