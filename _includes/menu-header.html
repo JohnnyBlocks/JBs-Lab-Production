@@ -1,6 +1,6 @@
 {% assign current = page.url | downcase | split: '/' %}
  <li class="nav-item">
-    <a class="nav-link{% if current[1] == nill %} active{% endif %}"" href="{{ site.baseurl }}/">Home : {{ current[1] }} {% if current[1] == nill %}yes{% endif %} </a>
+    <a class="nav-link{% if current[1] == nill %} active{% endif %}" href="{{ site.baseurl }}/">Home : {{ current[1] }} {% if current[1] == nill %}yes{% endif %} </a>
 </li>
 <li class="nav-item">
     <a class="nav-link{% if current[1] == 'how-to' %} active{% endif %}" title="Guides & 'How-To' Articles" href="{{ site.baseur l}}/how-to/index.html">Guides</a>
@@ -19,19 +19,19 @@
   </li>
 -->
 <li class="nav-item">
-    <a class="nav-link" title="Reviews of Games, Software, and Periferals"  href="{{ site.baseurl }}/reviews/index.html">Reviews</a>
+    <a class="nav-link{% if current[1] == 'reviews' %} active{% endif %}" title="Reviews of Games, Software, and Periferals"  href="{{ site.baseurl }}/reviews/index.html">Reviews</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="Stories and Thoughts"  href="{{ site.baseurl }}/stories/index.html">Stories</a>
+    <a class="nav-link{% if current[1] == 'stories' %} active{% endif %}" title="Stories and Thoughts"  href="{{ site.baseurl }}/stories/index.html">Stories</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="List of Authors at the Lab" href="{{ site.baseurl }}/lab-crew/index.html">The&nbsp;Crew</a>
+    <a class="nav-link{% if current[1] == 'lab-crew' %} active{% endif %}" title="List of Authors at the Lab" href="{{ site.baseurl }}/lab-crew/index.html">The&nbsp;Crew</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="About JB's Lab" href="{{ site.baseurl }}/the-lab/index.html">The&nbsp;Lab</a>
+    <a class="nav-link{% if current[1] == 'the-lab' %} active{% endif %}" title="About JB's Lab" href="{{ site.baseurl }}/the-lab/index.html">The&nbsp;Lab</a>
 </li>
 <li class="nav-item">
-    <a title="Buy JB a Coffee" class="nav-link" href="{{ site.baseurl }}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
+    <a title="Buy JB a Coffee{% if current[1] == 'buy-me' %} active{% endif %}" class="nav-link" href="{{ site.baseurl }}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
 </li>
 <li class="nav-item">
     <a title="Atom Feed" class="nav-link" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a>
