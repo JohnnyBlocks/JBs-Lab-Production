@@ -1,22 +1,14 @@
-
 <div class="container">
-    <a class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
-        <strong>Topics:</strong>
-    </a>
-    <ul class="navbar-nav mr-auto">
+    <span >
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
             {% assign posts = tag | last %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
-                <li class="nav-item">
-                    <a id="{{ tag[0] | downcase }}" class="nav-link sscroll  font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
-                    {% else %}
-                    <a id="{{ tag[0] | downcase }}" class="nav-link sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
-                </li>
+                    <a href="{{site.baseurl}}/topics.html#{{ tag 0] | downcase }}">{{ tag[0] | downcase }}</a>
                 {% endif%}           
             {% endif %}    
         {% endfor %}
-    </ul>
+    </span>
 </div>
