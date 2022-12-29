@@ -1,8 +1,8 @@
 ---
 author: JohnnyBlocks
-category: Thoughts
+category: The-Lab
 title:  "Welcome to JB's Lab!"
-tags: [ The-Lab, Sticky ]
+tags: [ ticky ]
 permalink: site-launch.html
 image: assets/images/steamdev.gif 
 ---
