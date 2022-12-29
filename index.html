@@ -33,7 +33,7 @@ pagination:
             {% endfor %}
             <span class="sep"> : Topics:</span> 
             {% for tag in latest_post.tags %}
-                {% if tag != "Featured"  %}
+                {% if tag != "Featured" and tag != 'Sticky'  %}
                     <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                 {% endif %}
             {% endfor %}
