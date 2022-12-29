@@ -166,9 +166,9 @@ pagination:
                         <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                     </span>
-                    <small class="text-muted">
-                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
-                    </small>
+                </small>
+                <small class="text-muted">
+                    By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
                 </small>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
