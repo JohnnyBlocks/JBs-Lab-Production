@@ -1,24 +1,11 @@
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h1 class="font-weight-bold title h6 text-uppercase mb-4">Tags</h1>
-       
-            {% assign sorted_tags = site.tags | sort %}
-            {% for tag in sorted_tags %}
-                {% assign t = tag | first %} 
-                {% assign posts = tag | last %}
-                <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}{{ posts.size }}</span></h4>
-
-
-
-            {% endfor %}
-
-        </div>
-        
-            <div class="col-md-4">
-        {% include sidebar-featured.html %}    
-    </div>
-        
-    </div>
+<!-- Tags -->
+<div class="mb-0">
+    <span class="taglist">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+            {% assign t = tag | first %} 
+            {% assign posts = tag | last %}
+             <a id="{{ tag[0] | downcase }}" class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag[0] }}</a>
+        {% endfor %}
+    </span>
 </div>
-
