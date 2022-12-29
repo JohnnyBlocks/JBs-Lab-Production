@@ -1,5 +1,6 @@
 ---
 title: "Buy me a coffee"
+layout: default
 permalink: "/buy-me-a-coffee.html"
 ---
 
