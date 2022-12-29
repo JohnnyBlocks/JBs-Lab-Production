@@ -1,21 +1,27 @@
-<!-- Tags -->
-
-
 <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a title="{{site.title}} : {{site.description}}" class="navbar-brand" href="{{ site.baseurl }}/index.html">
-            <img width="42px" src="/assets/icons/beaker-4-512.png" >
-            <strong>{{ site.title }}</strong></a>
+        <a title="{{site.title}} : {{site.description}}" class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
+            <strong>Topics:</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto d-flex align-items-center">
-                {% include menu-header.html %}
-            </ul>
-            <ul class="navbar-nav ml-auto d-flex align-items-center">
-                {% include search-lunr.html %}
+                {% assign sorted_tags = site.tags | sort %}
+                {% for tag in sorted_tags %}
+                    {% assign t = tag | first %} 
+                    {% assign posts = tag | last %}
+                    {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
+                        {% if tag[0] == "SteamDeck"  %}
+                        <li class="nav-item">
+                            <a id="{{ tag[0] | downcase }}" class="nav-link sscroll  font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
+                            {% else %}
+                            <a id="{{ tag[0] | downcase }}" class="nav-link sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+                        </li>
+                        {% endif%}           
+                    {% endif %}    
+                {% endfor %}
             </ul>
         </div>
     </div>
-    </nav>
+</nav>
