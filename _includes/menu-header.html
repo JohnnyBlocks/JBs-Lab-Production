@@ -1,10 +1,11 @@
 {% assign current = page.url | downcase | split: '/' %}
  <li class="nav-item">
-    <a class="nav-link   active  " href="{{ site.baseurl }}/">Home : {{ current[1] }}</a>
+    <a class="nav-link" {% if current[1] == '' %}class='active'{% endif %} href="{{ site.baseurl }}/">Home : {{ current[1] }}</a>
 </li>
-<li class="nav-item dropdown">
-    <a class="nav-link" title="Guides & 'How-To' Articles" href="{{ site.baseur l}}/how-to/index.html">Guides</a>
+<li class="nav-item">
+    <a class="nav-link" {% if current[1] == 'how-to' %}class='active'{% endif %}  title="Guides & 'How-To' Articles" href="{{ site.baseur l}}/how-to/index.html">Guides</a>
 </li>
+
 <!-- 
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
