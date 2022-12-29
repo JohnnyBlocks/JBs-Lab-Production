@@ -1,6 +1,6 @@
 {% assign current = page.url | downcase | split: '/' %}
  <li class="nav-item">
-    <a class="nav-link{% if current[1] == nill %} active{% endif %}" href="{{ site.baseurl }}/">Home : |{{ current[1] }}| {% if current[1] == 'reviews' %}yes{% endif %} </a>
+    <a class="nav-link{% if current[1] == nill %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 </li>
 <li class="nav-item">
     <a class="nav-link{% if current[1] == 'how-to' %} active{% endif %}" title="Guides & 'How-To' Articles" href="{{ site.baseur l}}/how-to/index.html">Guides</a>
@@ -30,7 +30,7 @@
     <a class="nav-link{% if current[1] == 'the-lab' %} active{% endif %}" title="About JB's Lab" href="{{ site.baseurl }}/the-lab/index.html">The&nbsp;Lab</a>
 </li>
 <li class="nav-item">
-    <a title="Buy JB a Coffee{% if current[1] == 'buy-me' %} active{% endif %}" class="nav-link" href="{{ site.baseurl }}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
+    <a class="nav-link{% if current[1] == 'buy-me' %} active{% endif %}" title="Buy JB a Coffee"  href="{{ site.baseurl }}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
 </li>
 <li class="nav-item">
     <a title="Atom Feed" class="nav-link" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a>
