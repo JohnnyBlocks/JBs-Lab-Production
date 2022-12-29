@@ -1,12 +1,10 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-bottom">
-    <div class="container">
-        <a title="{{site.title}} : {{site.description}}" class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
-            <strong>Topics:</strong></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor02">
+<div class="container">
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
+            <strong>Topics:</strong>
+        </a>
+        <div>
             <ul class="navbar-nav mr-auto d-flex align-items-center">
                 {% assign sorted_tags = site.tags | sort %}
                 {% for tag in sorted_tags %}
@@ -24,5 +22,5 @@
                 {% endfor %}
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
