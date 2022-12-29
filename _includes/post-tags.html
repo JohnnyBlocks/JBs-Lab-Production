@@ -1,0 +1,3 @@
+{% if tag != "Featured" and tag != 'Sticky' and tag != 'Buy-Me'  %}
+<a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+{% endif %}
