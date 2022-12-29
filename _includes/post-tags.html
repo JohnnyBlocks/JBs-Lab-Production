@@ -1,3 +1,7 @@
 {% if tag != "Featured" and tag != 'Sticky'  %}
-<a class="text-dark smoothscroll" href="{{site.baseurl}}/the-lab/topics.html#{{ tag | downcase }}">{{ tag }}</a>
+    {% if tag == "SteamDeck"  %}
+        <a class="text-dark smoothscroll" href="{{site.baseurl}}/the-lab/SteamDeck.html">{{ tag }}</a>
+    {% else %}
+        <a class="text-dark smoothscroll" href="{{site.baseurl}}/the-lab/topics.html#{{ tag | downcase }}">{{ tag }}</a>
+    {% endif%}
 {% endif %}

@@ -1,0 +1,27 @@
+---
+title: "SteamDeck"
+layout: default
+permalink: "/the-lab/steamdeck.html"
+---
+
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+          <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
+          
+          {% assign posts = site.posts | where: "tags", "SteamDeck" %}
+          {% for post in posts %}
+            {% include main-loop-card.html %}
+          {% else %}
+            There are no Articles.
+          {% endfor %} 
+
+        </div>
+        
+        <div class="col-md-4">
+          {% include sidebar-featured.html %}    
+        </div>
+        
+    </div>
+</div>
