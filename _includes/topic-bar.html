@@ -1,6 +1,6 @@
 <!-- Tags -->
 <div class="mb-0">
-    <span class="taglist">
+    <span class="navlist">
         <span>Topics: </span>
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
@@ -8,12 +8,18 @@
             {% assign posts = tag | last %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
-                <a id="{{ tag[0] | downcase }}" class="sscroll font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
-                {% else %}
-                <a id="{{ tag[0] | downcase }}" class="sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
-                {% endif%}
-             
+                <li class="nav-item">
+                    <a id="{{ tag[0] | downcase }}" class="nav-link sscroll  font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
+                    {% else %}
+                    <a id="{{ tag[0] | downcase }}" class="nav-link sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+                </li>
+                {% endif%}           
         {% endif %}    
          {% endfor %}
     </span>
 </div>
+
+
+<li class="nav-item">
+    <a class="nav-link" title="Reviews of Games, Software, and Periferals"  href="{{site.baseurl}}/reviews/index.html">Reviews</a>
+</li>
