@@ -1,5 +1,6 @@
-<div class="container">test:
-    <span >again:
+{% assign current = page.url | downcase | split: '/' %}
+<div class="container">Topics:
+    <span >{{current[1]}}
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
@@ -14,4 +15,3 @@
         {% endfor %}
     </span>
 </div>
-{{current[1]}}
