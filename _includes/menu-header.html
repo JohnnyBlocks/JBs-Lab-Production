@@ -1,8 +1,9 @@
+{% assign current = page.url | downcase | split: '/' %}
  <li class="nav-item">
-    <a class="nav-link" href="{{site.baseurl}}/">Home</a><span class="sr-only">(current)</span>
+    <a class="nav-link   active  " href="{{ site.baseurl }}/">Home : {{ current[1] }}</a>
 </li>
 <li class="nav-item dropdown">
-    <a class="nav-link" title="Guides & 'How-To' Articles" href="{{site.baseurl}}/how-to/index.html">Guides</a>
+    <a class="nav-link" title="Guides & 'How-To' Articles" href="{{ site.baseur l}}/how-to/index.html">Guides</a>
 </li>
 <!-- 
 <li class="nav-item dropdown">
@@ -17,20 +18,20 @@
   </li>
 -->
 <li class="nav-item">
-    <a class="nav-link" title="Reviews of Games, Software, and Periferals"  href="{{site.baseurl}}/reviews/index.html">Reviews</a>
+    <a class="nav-link" title="Reviews of Games, Software, and Periferals"  href="{{ site.baseurl }}/reviews/index.html">Reviews</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="Stories and Thoughts"  href="{{site.baseurl}}/stories/index.html">Stories</a>
+    <a class="nav-link" title="Stories and Thoughts"  href="{{ site.baseurl }}/stories/index.html">Stories</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="List of Authors at the Lab" href="{{site.baseurl}}/lab-crew/index.html">The&nbsp;Crew</a>
+    <a class="nav-link" title="List of Authors at the Lab" href="{{ site.baseurl }}/lab-crew/index.html">The&nbsp;Crew</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" title="About JB's Lab" href="{{site.baseurl}}/the-lab/index.html">The&nbsp;Lab</a>
+    <a class="nav-link" title="About JB's Lab" href="{{ site.baseurl }}/the-lab/index.html">The&nbsp;Lab</a>
 </li>
 <li class="nav-item">
-    <a title="Buy JB a Coffee" class="nav-link" href="{{site.baseurl}}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
+    <a title="Buy JB a Coffee" class="nav-link" href="{{ site.baseurl }}/buy-me/a-coffee.html"><i class="fa fa-coffee"></i></a>
 </li>
 <li class="nav-item">
-    <a title="Atom Feed" class="nav-link" href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss"></i></a>
+    <a title="Atom Feed" class="nav-link" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a>
 </li>
