@@ -196,7 +196,7 @@ pagination:
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
-        {% for post in paginator.posts %}
+        {% for post in paginator.posts | except: "category", "Buy-Me"  %}
         
             {% include main-loop-card.html %}
         
