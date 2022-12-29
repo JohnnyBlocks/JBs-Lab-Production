@@ -38,7 +38,7 @@ pagination:
             </span>
         </small>
         <small class="text-muted">
-            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%Y-%m-%d' }}
+            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ latest_post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%Y-%m-%d' }}
         </small>
     </div>
     </div>
@@ -72,6 +72,9 @@ pagination:
                         {% endfor %}
                         </span>
                     </small>
+                    <small class="text-muted">
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ second_post.author | slugify }}.html'>{{ second_post.author }}</a> : {{ second_post.date | date: '%Y-%m-%d' }}
+                    </small>
                 </div>
             </div>
         
@@ -99,6 +102,11 @@ pagination:
                             <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                         {% endfor %}
                         </span>
+                        <small class="text-muted">
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ third_post.author | slugify }}.html'>{{ third_post.author }}</a> : {{ third_post.date | date: '%Y-%m-%d' }}
+                    </small>
+                    <small class="text-muted">
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ third_post.author | slugify }}.html'>{{ third_post.author }}</a> : {{ third_post.date | date: '%Y-%m-%d' }}
                     </small>
                 </div>
             </div>
@@ -127,6 +135,9 @@ pagination:
                             <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                         {% endfor %}
                         </span>
+                    </small>
+                    <small class="text-muted">
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ fourth_post.author | slugify }}.html'>{{ fourth_post.author }}</a> : {{ fourth_post.date | date: '%Y-%m-%d' }}
                     </small>
                 </div>
             </div>
@@ -159,6 +170,9 @@ pagination:
                         <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                     </span>
+                    <small class="text-muted">
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
+                    </small>
                 </small>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
