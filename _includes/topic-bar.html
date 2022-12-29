@@ -6,8 +6,8 @@
             {% assign t = tag | first %} 
             {% assign posts = tag | last %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
-                {% if tag == "SteamDeck"  %}
-                <a id="{{ tag[0] | downcase }}" class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/the-lab/SteamDeck.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+                {% if tag[0] == "SteamDeck"  %}
+                <a id="{{ tag[0] | downcase }}" class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/the-lab/steamdeck.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
                 {% else %}
                 <a id="{{ tag[0] | downcase }}" class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/the-lab/topics.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
                 {% endif%}
