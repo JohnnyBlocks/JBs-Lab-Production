@@ -164,7 +164,7 @@ pagination:
                     {{ post.excerpt | strip_html | strip_newlines }}
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-                <small class="d-block text-muted">
+                <small class="d-block mt-2 text-muted">
                     In <span class="catlist">
                     {% for category in post.categories %}
                         <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
