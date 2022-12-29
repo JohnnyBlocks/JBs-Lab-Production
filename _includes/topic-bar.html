@@ -1,3 +1,4 @@
+{% assign current = page.url | downcase | split: '/' %}
 <div class="container">Topics:
     <span >{{ current[1] }}
         {% assign sorted_tags = site.tags | sort %}
