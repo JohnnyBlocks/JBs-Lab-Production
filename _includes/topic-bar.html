@@ -1,26 +1,3 @@
-
-<div class="container">
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-        <a class="navbar-brand" href="{{ site.baseurl }}/topics/index.html">
-            <strong>Topics:</strong>
-        </a>
-        <div>
-            <ul class="navbar-nav mr-auto">
-                {% assign sorted_tags = site.tags | sort %}
-                {% for tag in sorted_tags %}
-                    {% assign t = tag | first %} 
-                    {% assign posts = tag | last %}
-                    {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
-                        {% if tag[0] == "SteamDeck"  %}
-                        <li class="nav-item">
-                            <a id="{{ tag[0] | downcase }}" class="nav-link sscroll  font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
-                            {% else %}
-                            <a id="{{ tag[0] | downcase }}" class="nav-link sscroll font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
-                        </li>
-                        {% endif%}           
-                    {% endif %}    
-                {% endfor %}
-            </ul>
-        </div>
-    </nav>
-</div>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fixed bottom</a>
+  </nav>
