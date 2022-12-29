@@ -5,7 +5,7 @@
             <strong>Topics:</strong>
         </a>
         <div>
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
+            <ul class="navbar-nav mr-auto">
                 {% assign sorted_tags = site.tags | sort %}
                 {% for tag in sorted_tags %}
                     {% assign t = tag | first %} 
