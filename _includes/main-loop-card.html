@@ -13,7 +13,9 @@
 			{% endfor %}
 		<span class="sep"> : Topics:</span> 
 		{% for tag in post.tags %}
-			<a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+			{% if tag != "Featured" and tag != 'Sticky'  %}
+				<a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+			{% endif %}
 		{% endfor %}
 		</span>
 	</small>

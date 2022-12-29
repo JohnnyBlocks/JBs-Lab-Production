@@ -70,7 +70,9 @@ pagination:
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in second_post.tags %}
-                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% if tag != "Featured" and tag != 'Sticky'  %}
+                                <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% endif %}
                         {% endfor %}
                         </span>
                     </small>
@@ -101,7 +103,9 @@ pagination:
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in third_post.tags %}
-                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% if tag != "Featured" and tag != 'Sticky'  %}
+                                <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% endif %}
                         {% endfor %}
                         </span>
                     </small>
@@ -132,7 +136,9 @@ pagination:
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in fourth_post.tags %}
-                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% if tag != "Featured" and tag != 'Sticky'  %}
+                                <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                            {% endif %}
                         {% endfor %}
                         </span>
                     </small>
@@ -165,7 +171,9 @@ pagination:
                     {% endfor %}
                     <span class="sep"> : Topics:</span> 
                     {% for tag in post.tags %}
-                        <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% if tag != "Featured" and tag != 'Sticky'  %}
+                            <a class="text-dark smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+                        {% endif %}
                     {% endfor %}
                     </span>
                 </small>
