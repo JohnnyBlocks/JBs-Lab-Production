@@ -25,9 +25,7 @@ permalink: /lab-crew/index.html
                     
                 {% for social_list in site.data.crew.author[1].social %}
                     {% assign social = social_list[1] %}
-                    {% if social %}
                         <a target="_blank" href="{{ social.url }}"><i class="fab fa-{{ social.icon }}" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
                 {% endfor %}
                     ---
                     {% if author.steam %}
