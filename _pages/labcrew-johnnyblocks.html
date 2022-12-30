@@ -29,14 +29,29 @@ permalink: /lab-crew/johnnyblocks.html
                 </div>
             </div>
 
-            <h4 class="font-weight-bold spanborder"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
+            {{ site.authors.JohnnyBlocks.name }}  {{ page.url }}
+
+
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
             {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
             {% include main-loop-card.html %}
             {% endfor %}
 
- 
+            <h4 class="font-weight-bold spanborder" id="Reviews"><span>Reviews by {{ site.authors.JohnnyBlocks.name }}</span></h4>
+        
+            {% assign posts = site.categories.Reviews | where:"author","JohnnyBlocks" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
+
+            <h4 class="font-weight-bold spanborder" id="Stories"><span>Stories by {{ site.authors.JohnnyBlocks.name }}</span></h4>
+        
+            {% assign posts = site.categories.Stories | where:"author","JohnnyBlocks" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
             
         </div>
         
