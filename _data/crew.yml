@@ -4,15 +4,31 @@ JohnnyBlocks:
   tagline:        "Never Be Game Over"  
   bio:            "I am JohnnyBlocks.<br />Data Scientist : Computer Scientist : Video&nbsp;Gamer : Vegan"    
   social:
-    email:          jb+corner@JohnnyBlocks.com
-    steam:          https://s.team/p/kcv-whdv
-    github:         https://github.com/JohnnyBlocks
-    reddit:         https://www.reddit.com/user/YoYo-Pete
-    discord:        https://discordapp.com/users/121071541164310529
+    email:          
+      name:         email
+      url:          jb+corner@JohnnyBlocks.com
+    steam:
+      name:         steam
+      url:          https://s.team/p/kcv-whdv
+    #github:         https://github.com/JohnnyBlocks
+    #reddit:         https://www.reddit.com/user/YoYo-Pete
+    #discord:        https://discordapp.com/users/121071541164310529
     #linkedin:       ''
     #twitter:        ''
-    telegram:       https://telegram.me/JohnnyBlocks
-    instagram:      https://instagram.com/JohnnyBlocks_
-    youtube:        https://www.youtube.com/@JohnnyBlocks
-    site:           https://JohnnyBlocks.com
+    #telegram:       https://telegram.me/JohnnyBlocks
+    #instagram:      https://instagram.com/JohnnyBlocks_
+    #youtube:        https://www.youtube.com/@JohnnyBlocks
+    #globe:           https://JohnnyBlocks.com
       
+Test:
+  name:           Testy McTester
+  avatar:         assets/icons/beaker-4-512.png
+  tagline:        "I am a test record."  
+  bio:            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  social:
+    email:          
+      name:         email
+      url:          jb+corner@JohnnyBlocks.com
+    steam:
+      name:         steam
+      url:          https://s.team/p/kcv-whdv      

@@ -20,7 +20,13 @@ permalink: /lab-crew/index.html
             </a>
             <div class="excerpt">{{ author[1].bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
-                <div>
+                <div>               
+                {% for social in author[1] %}
+                    {% if social[1] %}
+                        <a target="_blank" href="{{ social[1].url }}"><i class="fab fa-{{ social[1].name }}" aria-hidden="true"></i></a> &nbsp;
+                    {% endif %}
+                {% endfor %}
+                    ---
                     {% if author[1].steam %}
                         <a target="_blank" href="{{ author[1].steam }}"><i class="fab fa-steam" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
