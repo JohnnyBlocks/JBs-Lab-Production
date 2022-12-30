@@ -29,9 +29,9 @@ permalink: /lab-crew/johnnyblocks.html
                 </div>
             </div>
 
-            <h4 class="font-weight-bold spanborder"><span>Articles by {{ site.authors.JohnnyBlocks.name }}</span></h4>
+            <h4 class="font-weight-bold spanborder"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
-            {% assign posts = site.posts | where:"author","JohnnyBlocks" %}
+            {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
             {% include main-loop-card.html %}
             {% endfor %}
