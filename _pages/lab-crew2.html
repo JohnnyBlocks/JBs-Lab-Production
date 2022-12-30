@@ -1,10 +1,8 @@
 ---
-title: "The Lab Crew"
-layout:  page
-permalink: /lab-crew/debug.html
+layout:  none
+permalink: /lab-crew/debug.json
 ---
 
-<pre>
-    data: {{ site.data | jsonify | escape }}
-</pre>
+{{ site.data | jsonify | escape }}
+
 
