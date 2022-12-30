@@ -22,42 +22,10 @@ permalink: /lab-crew/index.html
             <div class="excerpt">{{ author.bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>               
-                    
-                % for social_list in author.social %}
+                {% for social_list in author.social %}
                     {% assign social = social_list[1] %}
                         <a target="_blank" href="{{ social.url }}"><i class="fab fa-{{ social.icon }} text-dark" aria-hidden="true"></i></a> &nbsp;
                 {% endfor %}
-                    ---
-                    {% if author.steam %}
-                        <a target="_blank" href="{{ author.steam }}"><i class="fab fa-steam" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.github  %}
-                        <a target="_blank" href="{{ author.github }}"><i class="fab fa-github" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.reddit  %}
-                        <a target="_blank" href="{{ author.reddit }}"><i class="fab fa-reddit" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.discord  %}
-                        <a target="_blank" href="{{ author.discord }}"><i class="fab fa-discord" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.linkedin  %}
-                        <a target="_blank" href="{{ author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.twitter  %}
-                        <a target="_blank" href="{{ author.twitter }}"><i class="fab fa-twitter" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.telegram  %}
-                        <a target="_blank" href="{{ author.telegram }}"><i class="fab fa-telegram" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.instagram   %}
-                        <a target="_blank" href="{{ author.instagram }}"><i class="fab fa-instagram" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.youtube  %}
-                        <a target="_blank" href="{{ author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
-                    {% if author.site %}
-                        <a target="_blank" href="{{ author.site }}"><i class="fa fa-globe" aria-hidden="true"></i></a> &nbsp;
-                    {% endif %}
                 </div>
             </div>
             </div>
