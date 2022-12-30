@@ -8,7 +8,7 @@ permalink: /lab-crew/index.html
 <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
     {% for author_list in site.data.crew %}
-    {% assign author = author_list[1] %}
+        {% assign author = author_list[1] %}
         <div class="col-lg-6 mb-4">
             <div class="p-4 border rounded">
             <div class="row">
@@ -23,8 +23,8 @@ permalink: /lab-crew/index.html
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>               
                     
-                {% for social_list in author[1] %}
-                {% assign social = social_list[1] %}
+                {% for social_list in author %}
+                    {% assign social = social_list[1] %}
                     {% if social[1] %}
                         <a target="_blank" href="{{ social.url }}"><i class="fab fa-{{ social.icon }}" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
