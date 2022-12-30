@@ -29,11 +29,19 @@ permalink: /lab-crew/johnnyblocks.html
                 </div>
             </div>
 
-            {{ site.authors.JohnnyBlocks.name }}:
-            <a style="text-dark" href="#Guides" >Guides</a>
-            <a style="text-dark" href="#Reviews">Reviews</a>
-            <a style="text-dark" href="#Stories">Stories</a>
+            <!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+				{% endfor %}
+				</span>
+			</div>
 
+            {{ site.authors.JohnnyBlocks.name }}:
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
 
             <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
