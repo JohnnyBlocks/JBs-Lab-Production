@@ -21,6 +21,11 @@ permalink: /lab-crew/johnnyblocks.html
                     <p class="excerpt">
                         {% include social.html %}
                     </p>
+                    <p class="excerpt">
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
+                    </p>
                 </div>
                 <div class="col-md-3 pr-0 text-right">
                     <a href="{{site.baseurl}}{{page.url}}">
@@ -28,21 +33,7 @@ permalink: /lab-crew/johnnyblocks.html
                     </a>
                 </div>
             </div>
-
-            <!-- Tags -->
-			<div class="mb-4">
-				<span class="taglist">
-				{% for tag in page.tags %}
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
-				{% endfor %}
-				</span>
-			</div>
-
-            {{ site.authors.JohnnyBlocks.name }}:
-            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
-            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
-            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
-
+            
             <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
             {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
