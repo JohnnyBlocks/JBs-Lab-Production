@@ -29,7 +29,7 @@ pagination:
         <small class="d-block text-muted">
             In <span class="catlist">
             {% for category in latest_post.categories %}
-                <a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
             {% endfor %}
             <span class="sep"> : Topics:</span> 
             {% for tag in latest_post.tags %}
@@ -38,7 +38,7 @@ pagination:
             </span>
         </small>
         <small class="text-muted">
-            By <a href='{{site.baseurl}}/lab-crew/{{ latest_post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%Y-%m-%d' }}
+            By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ latest_post.author | slugify }}.html'>{{ latest_post.author }}</a> : {{ latest_post.date | date: '%Y-%m-%d' }}
         </small>
     </div>
     </div>
@@ -64,7 +64,7 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in second_post.categories %}
-                            <a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in second_post.tags %}
@@ -73,7 +73,7 @@ pagination:
                         </span>
                     </small>
                     <small class="text-muted">
-                        By <a href='{{site.baseurl}}/lab-crew/{{ second_post.author | slugify }}.html'>{{ second_post.author }}</a> : {{ second_post.date | date: '%Y-%m-%d' }}
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ second_post.author | slugify }}.html'>{{ second_post.author }}</a> : {{ second_post.date | date: '%Y-%m-%d' }}
                     </small>
                 </div>
             </div>
@@ -95,7 +95,7 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in third_post.categories %}
-                            <a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in third_post.tags %}
@@ -104,7 +104,7 @@ pagination:
                         </span>
                     </small>
                     <small class="text-muted">
-                        By <a  href='{{site.baseurl}}/lab-crew/{{ third_post.author | slugify }}.html'>{{ third_post.author }}</a> : {{ third_post.date | date: '%Y-%m-%d' }}
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ third_post.author | slugify }}.html'>{{ third_post.author }}</a> : {{ third_post.date | date: '%Y-%m-%d' }}
                     </small>
                 </div>
             </div>
@@ -126,7 +126,7 @@ pagination:
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in fourth_post.categories %}
-                            <a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                            <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                         {% endfor %}
                         <span class="sep"> : Topics:</span> 
                         {% for tag in fourth_post.tags %}
@@ -135,7 +135,7 @@ pagination:
                         </span>
                     </small>
                     <small class="text-muted">
-                        By <a href='{{site.baseurl}}/lab-crew/{{ fourth_post.author | slugify }}.html'>{{ fourth_post.author }}</a> : {{ fourth_post.date | date: '%Y-%m-%d' }}
+                        By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ fourth_post.author | slugify }}.html'>{{ fourth_post.author }}</a> : {{ fourth_post.date | date: '%Y-%m-%d' }}
                     </small>
                 </div>
             </div>
@@ -159,7 +159,7 @@ pagination:
                 <small class="d-block mt-2 text-muted">
                     In <span class="catlist">
                     {% for category in post.categories %}
-                        <a href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+                        <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
                     {% endfor %}
                     <span class="sep"> : Topics:</span> 
                     {% for tag in post.tags %}
@@ -168,7 +168,7 @@ pagination:
                     </span>
                 </small>
                 <small class="text-muted">
-                    By <a href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
+                    By <a class="text-dark" href='{{site.baseurl}}/lab-crew/{{ post.author | slugify }}.html'>{{ post.author }}</a> : {{ post.date | date: '%Y-%m-%d' }}
                 </small>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
