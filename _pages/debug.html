@@ -7,6 +7,6 @@ permalink: /debug.html
     <pre>{{ author | jsonify | escape }}</pre>
     {% for social_list in author %}
         {% assign social = social_list[1] %}
-         <pre>{{ author | jsonify | escape }}</pre>  
+         <pre>{{ social | jsonify | escape }}</pre>  
     {% endfor %}
 {% endfor %}
