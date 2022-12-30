@@ -1,0 +1,14 @@
+---
+title: "The Lab Crew"
+layout:  page
+permalink: /lab-crew/debug.html
+---
+
+<pre>
+    site: {{ site | jsonify | escape }}
+    page: {{ page | jsonify | escape }}
+    layout: {{ layout | jsonify | escape }}
+    content: {{ content | jsonify | escape }}
+    paginator: {{ paginator | jsonify | escape }}
+</pre>
+
