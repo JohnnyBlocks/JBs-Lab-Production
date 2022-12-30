@@ -4,13 +4,9 @@ permalink: /debug.html
 ---
 {% for author_list in site.data.crew %}
     {% assign author = author_list[1] %}
-    <pre>
-        {{ author | jsonify | escape }}
-    </pre>
-    {% for social_list in author_list[1] %}
+    <pre>{{ author | jsonify | escape }}</pre>
+    {% for social_list in author %}
         {% assign social = social_list[1] %}
-        <pre>
-            {{ solcial | jsonify | escape }}
-        </pre>
+         <pre>{{ author | jsonify | escape }}</pre>  
     {% endfor %}
 {% endfor %}
