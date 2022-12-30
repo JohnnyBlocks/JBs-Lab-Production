@@ -7,9 +7,9 @@
             {% if page.tags | downcase  contains tag[0] | downcase  %}true {{tag[0]}}{% else %}false {{tag[0]}}{% endif %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
-                    <a class="{% if page.tags | downcase  contains tag[0] | downcase  %}text-light{% else %}text-dark{% endif %}" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] | downcase }}</a>
+                    <a class="text-dark" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] | downcase }}</a>
                 {% else %}
-                    <a class="{% if page.tags | downcase  contains tag[0] | downcase %}text-light{% else %}text-dark{% endif %}" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] | downcase }}</a>
+                    <a class="text-dark" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] | downcase }}</a>
                 {% endif%}           
             {% endif %}    
         {% endfor %}
