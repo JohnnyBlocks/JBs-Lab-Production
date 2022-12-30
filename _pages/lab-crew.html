@@ -21,6 +21,16 @@ permalink: /lab-crew/index.html
             <div class="excerpt">{{ author[1].bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>               
+                
+                    <pre>
+                        site: {{ site | jsonify | escape }}
+                        page: {{ page | jsonify | escape }}
+                        layout: {{ layout | jsonify | escape }}
+                        content: {{ content | jsonify | escape }}
+                        paginator: {{ paginator | jsonify | escape }}
+                    </pre>
+
+
                 {% for social in author[1] %}
                     {% if social[1] %}
                         <a target="_blank" href="{{ social[1].url }}"><i class="fab fa-{{ social[1].name }}" aria-hidden="true"></i></a> &nbsp;
