@@ -39,21 +39,27 @@ permalink: /lab-crew/johnnyblocks.html
         
             {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
-            {% include main-loop-card.html %}
+                {% include main-loop-card.html %}
+            {% else %}
+                JB hasn't published any Guides.
             {% endfor %}
 
             <h4 class="font-weight-bold spanborder" id="Reviews"><span>Reviews by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
             {% assign posts = site.categories.Reviews | where:"author","JohnnyBlocks" %}
-            {% for post in posts %}
+                {% for post in posts %}
             {% include main-loop-card.html %}
+            {% else %}
+                JB hasn't published any Reviews.
             {% endfor %}
 
             <h4 class="font-weight-bold spanborder" id="Stories"><span>Stories by {{ site.authors.JohnnyBlocks.name }}</span></h4>
         
             {% assign posts = site.categories.Stories | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
-            {% include main-loop-card.html %}
+                {% include main-loop-card.html %}
+            {% else %}
+                JB hasn't published any Stories.
             {% endfor %}
             
         </div>
