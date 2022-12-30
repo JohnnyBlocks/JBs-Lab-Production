@@ -1,5 +1,5 @@
 <div class="container">Topics:
-    <span > -{{ page.tags | downcase }}-
+    <span > -{{ page.tags | downcase }}-{% if page.tags | downcase  contains tag[0] | downcase  %}text-light{% else %}text-dark{% endif %}
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
