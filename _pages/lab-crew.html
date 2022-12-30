@@ -24,6 +24,7 @@ permalink: /lab-crew/index.html
                 <div>               
                     
                 {% for social in author.social %}
+                    {% assign social = social_list[1] %}
                         <a target="_blank" href="{{ social.url }}"><i class="fab fa-{{ social.icon }} text-dark" aria-hidden="true"></i></a> &nbsp;
                 {% endfor %}
                     ---
