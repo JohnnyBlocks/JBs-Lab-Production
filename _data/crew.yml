@@ -5,19 +5,19 @@ JohnnyBlocks:
   bio:            "I am JohnnyBlocks.<br />Data Scientist : Computer Scientist : Video&nbsp;Gamer : Vegan"    
   social:
     email:          
-      icon:         envelope
+      icon:         fa fa-envelope
       url:          mailto://jb+corner@JohnnyBlocks.com
     steam:
-      icon:         steam
+      icon:         fab fa-steam
       url:          https://s.team/p/kcv-whdv
     github:
-      icon:         github
+      icon:         fab fa-github
       url:          https://github.com/JohnnyBlocks
     reddit:
-      icon:         reddit
+      icon:         fab fa-reddit
       url:          https://www.reddit.com/user/YoYo-Pete
     discord:
-      icon:         discord
+      icon:         fab fa-discord
       url:          https://discordapp.com/users/121071541164310529
     # linkedin:
     #   icon:       
@@ -26,16 +26,16 @@ JohnnyBlocks:
     #   icon:       
     #   url:    
     telegram:
-      icon:         telegram
+      icon:         fab fa-telegram
       url:          https://telegram.me/JohnnyBlocks
     instagram:
-      icon:         instagram
+      icon:         fab fa-instagram
       url:          https://instagram.com/JohnnyBlocks_
     youtube:
-      icon:         youtube
+      icon:         fab-fa-youtube
       url:          https://www.youtube.com/@JohnnyBlocks
     website:
-      icon:         globe
+      icon:         fa-globe
       url:          https://JohnnyBlocks.com
       
 Test:
@@ -45,7 +45,7 @@ Test:
   bio:            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   social:
     email:          
-      icon:         envelope
+      icon:         fa-envelope
       url:          test@JohnnyBlocks.com
     steam:
       icon:         steam
