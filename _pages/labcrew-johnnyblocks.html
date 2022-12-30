@@ -1,22 +1,23 @@
 ---
 title: "Meet JohnnyBlocks"
 layout: default
+crew:   JohnnyBlocks
 permalink: /lab-crew/johnnyblocks.html
 ---
 <div class="container">
     <div class="row mt-3">
         <div class="col-md-8 main-loop">
-<!--        -->
+            {% for author in site.data.authors.JohnnyBlocks  %}
             <div class="mb-5 d-flex justify-content-between main-loop-card">
                 <div class="pr-3">
                     <h2 class="mb-1 h4 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{page.url}}">{{ page.title }}</a>
                     </h2>
                     <p class="excerpt">
-                        "{{ site.authors.JohnnyBlocks.tagline }}"
+                        "{{ author.tagline }}"
                     </p>
                     <p class="excerpt">
-                        {{ site.authors.JohnnyBlocks.bio }}
+                        {{ author.bio }}
                     </p>
                     <p class="excerpt">
                         {% include social.html %}
@@ -29,12 +30,12 @@ permalink: /lab-crew/johnnyblocks.html
                 </div>
                 <div class="col-md-3 pr-0 text-right">
                     <a href="{{site.baseurl}}{{page.url}}">
-                        <img class="w-100" alt="{{ site.authors.JohnnyBlocks.name }}" src="{{ site.baseurl }}/{{ site.authors.JohnnyBlocks.avatar }}" >
+                        <img class="w-100" alt="{{ author.name }}" src="{{ site.baseurl }}/{{ author.avatar }}" >
                     </a>
                 </div>
             </div>
-            
-            <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ site.authors.JohnnyBlocks.name }}</span></h4>
+            % endfor %}
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ author.name }}</span></h4>
         
             {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
             {% for post in posts %}
