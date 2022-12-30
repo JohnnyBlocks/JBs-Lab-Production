@@ -22,9 +22,9 @@ permalink: /lab-crew/index.html
             <div class="icon-block mt-3 d-flex justify-content-between">  
                 <div>               
 
-                {% for social in author[1] %}
+                {% for social in site.data.crew.[author[1]] %}
                     {% if social[1] %}
-                        <a target="_blank" href="{{ social[1].url }}"><i class="fab fa-{{ social[1].name }}" aria-hidden="true"></i></a> &nbsp;
+                        <a target="_blank" href="{{ social[1].url }}"><i class="fab fa-{{ social[1].icon }}" aria-hidden="true"></i></a> &nbsp;
                     {% endif %}
                 {% endfor %}
                     ---
