@@ -1,10 +1,12 @@
-<div class="container">Topics:
+<div class="container">
+    <span>
+        Topics:
+    </span>
     <span >
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
             {% assign t = tag | first %} 
             {% assign posts = tag | last %}
-            {% if page.tags | downcase  contains tag[0] | downcase  %}true {{tag[0]}}{% else %}false {{tag[0]}}{% endif %}
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
                     <a class="text-dark" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] | downcase }}</a>
