@@ -14,7 +14,7 @@ permalink: "/topics/index.html"
                
                     {% assign t = tag | first %} 
                     {% assign posts = tag | last %}
-                    {% if tag[0] != "Featured" and tag[0] != 'Sticky' and category[0] != 'SteamDeck'  %}
+                    {% if tag[0] != "Featured" and tag[0] != 'Sticky' and tag[0] != 'SteamDeck' and tag[0] != 'TeamSpeak'  %}
                         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
                         {% for post in posts %}
                         {% if post.title != null %}
