@@ -14,8 +14,9 @@ layout: default
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Latest">Latest Article</a>
           </p>
-          <h4 class="font-weight-bold spanborder" id="Guides"><span>{{ page.topic }} Latest Article</span></h4>
+          <h4 class="font-weight-bold spanborder" id="Latest"><span>{{ page.topic }} Latest Article</span></h4>
           {% assign i = 0 %}
           {% for post in site.posts %}
             {% if post.tags contains page.topic and i < 1 %}
