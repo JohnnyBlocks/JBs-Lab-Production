@@ -13,9 +13,7 @@ tags: [ TeamSpeak ]
 
         <div class="col-md-8">
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
-          {{ site.movies | where_exp: "item", "item.genre == 'horror' and item.language == 'English'" }}
-
-          {% assign posts = site.posts | "where_exp": "post.tags contains [ page.tags ]" %}
+          {% assign posts = site.posts | where: "tags", "[ page.tags ]" %}
           {% for post in posts %}
             {% include main-loop-card.html %}
           {% else %}
