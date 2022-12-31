@@ -8,6 +8,10 @@ baseurl: ''
 disqus: 'JohnnyBlocks'
 email: 'jb@JohnnyBlocks.com'
 mailchimp-list: 'https://mailchi.mp/070704eeeaa2/corner-news-letter'
+author:
+  name: JohnnyBlocks
+  url: https://JohnnyBlocks.com
+
 
 include: ["_pages"]
 permalink: "/:categories/:title:output_ext"
