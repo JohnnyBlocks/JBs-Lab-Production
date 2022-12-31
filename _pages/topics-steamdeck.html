@@ -13,7 +13,7 @@ tags: [ SteamDeck ]
         <div class="col-md-8">
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
           
-          {% assign posts = site.posts | where: "tags", [ page.tags ] %}
+          {% assign posts = site.posts.tags[ page.tags ] %}
           {% for post in posts %}
             {% include main-loop-card.html %}
           {% else %}
