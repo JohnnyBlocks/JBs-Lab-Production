@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-8 main-loop">
+            {% assign author = site.data.crew[page.crew] %}
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+                <div class="pr-3">
+                    <h2 class="mb-1 h4 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{page.url}}">{{ page.title }}</a>
+                    </h2>
+                    <p class="excerpt">
+                        "{{ author.tagline }}"
+                    </p>
+                    <p class="excerpt">
+                        {{ author.bio }}
+                    </p>
+                    <p class="excerpt">
+                        {% include social.html %}
+                    </p>
+                    <p class="excerpt">
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
+                        <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
+                    </p>
+                </div>
+                <div class="col-md-3 pr-0 text-right">
+                    <a href="{{site.baseurl}}{{page.url}}">
+                        <img class="w-100" alt="{{ author.name }}" src="{{ site.baseurl }}/{{ author.avatar }}" >
+                    </a>
+                </div>
+            </div>
+
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>Latest Article</span></h4>
+
+            {% assign latest_posts = site.posts | where: "author",page.crew  %}
+            {% for post in latest_posts limit: 1 %}
+                {% include main-loop-card.html %}
+            {% else %}
+                {{ author.name }} hasn't published any articles.
+            {% endfor %}
+
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ author.name }}</span></h4>
+        
+            {% assign posts = site.categories.How-To | where:"author",page.crew %}
+            {% for post in posts %}
+                {% include main-loop-card.html %}
+            {% else %}
+                {{ author.name }} hasn't published any Guides.
+            {% endfor %}
+
+            <h4 class="font-weight-bold spanborder" id="Reviews"><span>Reviews by {{ author.name }}</span></h4>
+        
+            {% assign posts = site.categories.Reviews | where:"author",page.crew %}
+            {% for post in posts %}
+                {% include main-loop-card.html %}
+            {% else %}
+                {{ author.name }} hasn't published any Reviews.
+            {% endfor %}
+
+            <h4 class="font-weight-bold spanborder" id="Stories"><span>Stories by {{ author.name }}</span></h4>
+        
+            {% assign posts = site.categories.Stories | where:"author",page.crew %}
+            {% for post in posts %}
+                {% include main-loop-card.html %}
+            {% else %}
+                {{ author.name }} hasn't published any Stories.
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+</div>
