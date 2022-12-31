@@ -3,6 +3,9 @@ layout:  none
 crew:   JohnnyBlocks
 permalink: /debug.html
 ---
+{% assign latest_posts = site.posts %}
 
-<pre></pre>
+
+{% endfor %}
+<pre>{{ latest_posts | jsonify  }}</pre>
 
