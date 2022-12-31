@@ -7,8 +7,7 @@ permalink: /lab-crew/johnnyblocks.html
 <div class="container">
     <div class="row mt-3">
         <div class="col-md-8 main-loop">
-            {% for author in site.data.crew.[page.crew] %}
-            
+            {% assign author = site.data.crew.[page.crew] %}
             <div class="mb-5 d-flex justify-content-between main-loop-card">
                 <div class="pr-3">
                     <h2 class="mb-1 h4 font-weight-bold">
@@ -42,7 +41,7 @@ permalink: /lab-crew/johnnyblocks.html
             {% for post in posts %}
                 {% include main-loop-card.html %}
             {% else %}
-                JB hasn't published any Guides.
+                {{ author.name }} hasn't published any Guides.
             {% endfor %}
 
             <h4 class="font-weight-bold spanborder" id="Reviews"><span>Reviews by {{ site.authors.JohnnyBlocks.name }}</span></h4>
@@ -51,7 +50,7 @@ permalink: /lab-crew/johnnyblocks.html
             {% for post in posts %}
                 {% include main-loop-card.html %}
             {% else %}
-                JB hasn't published any Reviews.
+                {{ author.name }} hasn't published any Reviews.
             {% endfor %}
 
             <h4 class="font-weight-bold spanborder" id="Stories"><span>Stories by {{ site.authors.JohnnyBlocks.name }}</span></h4>
@@ -60,7 +59,7 @@ permalink: /lab-crew/johnnyblocks.html
             {% for post in posts %}
                 {% include main-loop-card.html %}
             {% else %}
-                JB hasn't published any Stories.
+                {{ author.name }} hasn't published any Stories.
             {% endfor %}
             
         </div>
