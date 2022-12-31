@@ -4,6 +4,7 @@ layout: default
 permalink: /topics/steamdeck.html
 image: /assets/images/sd_logo_gradient_animated.png
 alt: SteamDeck Logo
+topic: SteamDeck
 ---
 <img src="{{ page.image }}" title="{{ page.title }}">
 <div class="container">
@@ -13,7 +14,7 @@ alt: SteamDeck Logo
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
           
           {% for post in site.posts %}
-            {% if post.tags contains 'SteamDeck' %}
+            {% if post.tags contains page.topic %}
                 {% include main-loop-card.html %}
             {% endif %}
           {% endfor %} 
