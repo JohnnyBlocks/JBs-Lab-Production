@@ -4,8 +4,6 @@ layout: default
 permalink: /topics/teamspeak.html
 image: 
 alt: TeamSpeak Logo
-topic: TeamSpeak
-
 ---
 <img src="{{ page.image }}" title="{{ page.title }}">
 <div class="container">
@@ -14,7 +12,7 @@ topic: TeamSpeak
         <div class="col-md-8">
           <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
             {% for post in site.posts %}
-                {% if post.tags contains [page.topic] %}
+                {% if post.tags contains 'TeamSpeak' %}
                     {% include main-loop-card.html %}
                 {% endif %}
             {% endfor %} 

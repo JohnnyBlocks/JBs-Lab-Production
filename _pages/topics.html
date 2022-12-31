@@ -16,11 +16,9 @@ permalink: "/topics/index.html"
                     {% assign posts = tag | last %}
                     {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
-
                         {% for post in posts %}
                         {% if post.title != null %}
                         {% if group == null or group == post.group %}
-                        
                             {% include main-loop-card.html %}
                         {% endif %}
                         {% endif %}
