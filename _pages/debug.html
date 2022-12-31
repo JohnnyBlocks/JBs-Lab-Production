@@ -3,4 +3,5 @@ layout:  none
 crew:   JohnnyBlocks
 permalink: /debug.html
 ---
+{% assign latest_post = site.posts[0] | where"author":[page.crew] %}
 <pre>{{ site.data.crew | jsonify  }}</pre>
