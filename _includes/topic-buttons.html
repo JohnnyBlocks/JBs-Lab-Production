@@ -1,0 +1,18 @@
+<div class="container">
+    <p class="excerpt mb-5">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+            {% assign t = tag | first %} 
+            {% assign posts = tag | last %}
+            {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
+                {% if tag[0] == "SteamDeck"  %}
+                    <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
+                {% elsif tag[0] == "TeamSpeak"  %}
+                    <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/topics/teamspeak.html">{{ tag[0] }}</a>
+                {% else %}
+                    <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+                {% endif%}           
+            {% endif %}    
+        {% endfor %}        
+    </p>
+</div> 
