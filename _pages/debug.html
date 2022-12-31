@@ -3,6 +3,6 @@ layout:  none
 crew:   JohnnyBlocks
 permalink: /debug.html
 ---
-{% assign latest_post = site.posts limit: 3| where:"author",[page.crew] %}
+{% assign latest_posts = site.posts limit: 3 | where:"author",[page.crew] %}
 
-<pre>{{ latest_post | jsonify  }}</pre>
+<pre>{{ latest_posts | jsonify  }}</pre>
