@@ -1,6 +1,8 @@
 {% if tag != "Featured" and tag != 'Sticky'  %}
     {% if tag == "SteamDeck"  %}
         <a class="text-dark smoothscroll" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag }}</a>
+    {% if tag == "TeamSpeak"  %}
+        <a class="text-dark smoothscroll" href="{{site.baseurl}}/topics/teamspeak.html">{{ tag }}</a>
     {% else %}
         <a class="text-dark smoothscroll" href="{{site.baseurl}}/topics/index.html#{{ tag | downcase }}">{{ tag }}</a>
     {% endif%}

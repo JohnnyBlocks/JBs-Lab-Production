@@ -35,10 +35,10 @@ permalink: /lab-crew/johnnyblocks.html
                 </div>
             </div>
 
-            <h4 class="font-weight-bold spanborder" id="Guides"><span>Latest Articles</span></h4>
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>{{ author.name }}'s Latest Article</span></h4>
 
             {% assign latest_posts = site.posts | where: "author",[page.crew]  %}
-            {% for post in latest_posts limit: 2 %}
+            {% for post in latest_posts limit: 1 %}
                 {% include main-loop-card.html %}
             {% else %}
                 {{ author.name }} hasn't published any articles.
