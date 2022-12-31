@@ -16,7 +16,7 @@ topic: SteamDeck
           <p class="excerpt">
             {{ page.description }}
           </p>
-          <p class="excerpt">
+          <p class="excerpt mb-5">
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
             <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
@@ -40,7 +40,7 @@ topic: SteamDeck
               {% endif %}
             {% endfor %}
             {% if i < 1 %}
-              <p class="excerpt">There are no {{ page.topic }} Guides.</p>
+              <p class="excerpt mb-5">There are no {{ page.topic }} Guides.</p>
             {% endif %}
             <h4 class="font-weight-bold spanborder" id="Reviews"><span>{{ page.topic }} Reviews</span></h4>
             {% assign i = 0 %}
@@ -52,7 +52,7 @@ topic: SteamDeck
               {% endif %}
             {% endfor %}
             {% if i < 1 %}
-              <p class="excerpt">There are no {{ page.topic }} Reviews.</p>
+              <p class="excerpt mb-5">There are no {{ page.topic }} Reviews.</p>
             {% endif %}
             <h4 class="font-weight-bold spanborder" id="Stories"><span>{{ page.topic }} Stories</span></h4>
             {% assign i = 0 %}
@@ -64,7 +64,7 @@ topic: SteamDeck
               {% endif %}
             {% endfor %}
             {% if i < 1 %}
-              <p class="excerpt">There are no {{ page.topic }} Stpries.</p>
+              <p class="excerpt mb-5">There are no {{ page.topic }} Stpries.</p>
             {% endif %}
         </div>
         
