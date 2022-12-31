@@ -10,7 +10,7 @@
             {% if tag[0] != "Featured" and tag[0] != 'Sticky'  %}
                 {% if tag[0] == "SteamDeck"  %}
                     <a class="text-dark" href="{{site.baseurl}}/topics/steamdeck.html">{{ tag[0] }}</a>
-                {% if tag[0] == "TeamSpeak"  %}
+                {% elsif tag[0] == "TeamSpeak"  %}
                     <a class="text-dark" href="{{site.baseurl}}/topics/teamspeak.html">{{ tag[0] }}</a>
                 {% else %}
                     <a class="text-dark" href="{{site.baseurl}}/topics/index.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
