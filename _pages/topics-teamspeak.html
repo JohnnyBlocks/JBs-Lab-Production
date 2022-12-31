@@ -16,7 +16,7 @@ tags: [ TeamSpeak ]
             {% assign posts = site.posts %}
             {% if posts.size == 0 %}
                 There are no Articles.
-            {% elseif %}
+            {% elsif %}
                 {% for post in posts %}
                     {% if post.tags contains [page.tags] %}
                         {% include main-loop-card.html %}
