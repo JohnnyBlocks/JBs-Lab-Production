@@ -36,8 +36,13 @@ permalink: /lab-crew/johnnyblocks.html
             </div>
 
             <h4 class="font-weight-bold spanborder" id="Guides"><span>Latest Article</span></h4>
+            {% assign latest_posts = site.posts.author[page.crew] limit: 3  %}
+            {% for post in latest_posts %}
+                {% include main-loop-card.html %}
+            {% else %}
+                {{ author.name }} hasn't published any articles.
+            {% endfor %}
 
-            
             <h4 class="font-weight-bold spanborder" id="Guides"><span>Guides by {{ author.name }}</span></h4>
         
             {% assign posts = site.categories.How-To | where:"author","JohnnyBlocks" %}
