@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<img src="{{ page.image }}" title="{{ page.title }}">
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+          <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{ page.title }}</h1>
+          <p class="excerpt">
+            {{ page.description }}
+          </p>
+          <p class="excerpt mb-5">
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Guides" >Guides</a>
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Reviews">Reviews</a>
+            <a class="text-dark sscroll btn btn-light btn-sm font-weight-bold" href="#Stories">Stories</a>
+          </p>
+          <h4 class="font-weight-bold spanborder" id="Guides"><span>{{ page.topic }} Latest Article</span></h4>
+          {% assign i = 0 %}
+          {% for post in site.posts %}
+            {% if post.tags contains page.topic and i < 1 %}
+                {% include main-loop-card.html %}
+                {% assign i = i | plus:1 %}
+            {% endif %}
+          {% endfor %} 
+
+            <h4 class="font-weight-bold spanborder" id="Guides"><span>{{ page.topic }} Guides</span></h4>
+            {% assign i = 0 %}
+            {% assign posts = site.categories.How-To %}
+            {% for post in posts %}
+              {% if post.tags contains page.topic %}
+                {% include main-loop-card.html %}
+                {% assign i = i | plus:1 %}
+              {% endif %}
+            {% endfor %}
+            {% if i < 1 %}
+              <p class="excerpt mb-5">There are no {{ page.topic }} Guides.</p>
+            {% endif %}
+            <h4 class="font-weight-bold spanborder" id="Reviews"><span>{{ page.topic }} Reviews</span></h4>
+            {% assign i = 0 %}
+            {% assign posts = site.categories.Reviews %}
+            {% for post in posts %}
+              {% if post.tags contains page.topic %}
+                {% include main-loop-card.html %}
+                {% assign i = i | plus:1 %}
+              {% endif %}
+            {% endfor %}
+            {% if i < 1 %}
+              <p class="excerpt mb-5">There are no {{ page.topic }} Reviews.</p>
+            {% endif %}
+            <h4 class="font-weight-bold spanborder" id="Stories"><span>{{ page.topic }} Stories</span></h4>
+            {% assign i = 0 %}
+            {% assign posts = site.categories.Stories %}
+            {% for post in posts %}
+              {% if post.tags contains page.topic %}
+                {% include main-loop-card.html %}
+                {% assign i = i | plus:1 %}
+              {% endif %}
+            {% endfor %}
+            {% if i < 1 %}
+              <p class="excerpt mb-5">There are no {{ page.topic }} Stpries.</p>
+            {% endif %}
+        </div>
+        
+        <div class="col-md-4">
+          {% include sidebar-featured.html %}    
+        </div>
+        
+    </div>
+</div>
