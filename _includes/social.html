@@ -1,32 +1,6 @@
-<div>
-    {% if site.authors.JohnnyBlocks.steam %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.steam }}"><i class="fab fa-steam text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.github  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.github }}"><i class="fab fa-github text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.reddit  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.reddit }}"><i class="fab fa-reddit text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.discord  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.discord }}"><i class="fab fa-discord text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.linkedin  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.linkedin }}"><i class="fab fa-linkedin text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.twitter  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.twitter }}"><i class="fab fa-twitter text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.telegram %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.telegram }}"><i class="fab fa-telegram text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.instagram  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.instagram }}"><i class="fab fa-instagram text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.youtube  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.youtube }}"><i class="fab fa-youtube text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
-    {% if site.authors.JohnnyBlocks.site  %}
-        <a target="_blank" href="{{ site.authors.JohnnyBlocks.site }}"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a> &nbsp;
-    {% endif %}
+<div>               
+{% for social_list in author.social %}
+    {% assign social = social_list[1] %}
+    <a target="_blank" href="{{ social.url }}" class="text-dark"><i class="{{ social.icon }}" aria-hidden="true"></i></a> &nbsp;
+{% endfor %}
 </div>

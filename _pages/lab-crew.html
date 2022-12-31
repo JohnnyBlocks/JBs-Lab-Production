@@ -21,12 +21,7 @@ permalink: /lab-crew/index.html
             </a>
             <div class="excerpt">{{ author.bio }}</div>
             <div class="icon-block mt-3 d-flex justify-content-between">  
-                <div>               
-                {% for social_list in author.social %}
-                    {% assign social = social_list[1] %}
-                    <a target="_blank" href="{{ social.url }}" class="text-dark"><i class="{{ social.icon }}" aria-hidden="true"></i></a> &nbsp;
-                {% endfor %}
-                </div>
+                {% include social.html %}
             </div>
             </div>
             </div>
