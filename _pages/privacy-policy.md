@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-permalink: /privacy-policy.html
+permalink: /the-lab/privacy-policy.html
 ---
 
 "{{site.title}}" takes your privacy seriously. To better protect your privacy we provide this privacy policy notice explaining the way your personal information is collected and used.
@@ -11,7 +11,7 @@ This website track basic information about their visitors. This information incl
 
 #### Cookies
 
-Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content.
+Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content such as light or dark mode.
 
 #### Advertisement and Other Third Parties
 
@@ -41,4 +41,4 @@ We reserve the right to update or change our Privacy Policy at any time and you 
 
 #### Contact Information
 
-For any questions or concerns regarding the privacy policy, please [contact us here](https://github.com/JohnnyBlocks/JBs-Corner/issues/new?assignees=&labels=New+Issue&template=tell-me.yaml&title=New+Issue).
+For any questions or concerns regarding the privacy policy, please [contact us here](mailto://the-lab@JohnnyBlocks.com).
