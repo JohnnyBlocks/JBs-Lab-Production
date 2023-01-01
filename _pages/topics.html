@@ -5,10 +5,10 @@ permalink: "/topics/index.html"
 ---
 
 <div class="container">
-    <h4 class="font-weight-bold spanborder" id="Latest"><span>Select a Topic</span></h4>
-    {% include topic-buttons.html %} 
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <h4 class="font-weight-bold spanborder" id="Latest"><span>Select a Topic</span></h4>
+        {% include topic-buttons.html %} 
             <h1 class="font-weight-bold title h6 text-uppercase mb-4">Miscellaneous Topics</h1>
        
             {% assign sorted_tags = site.tags | sort %}
