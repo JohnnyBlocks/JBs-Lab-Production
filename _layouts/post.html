@@ -11,17 +11,19 @@ layout: default
 					<div class="row mt-5">
 						{% include post-author.html %}
 					</div>	
-					<p class="font-weight-bold">
-                        <span class="catlist"> In:
-						{% for category in page.categories %}
-                        	<a class="sscroll" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-						Topics:
-						{% for tag in page.tags %}
-                          {% include post-tags.html %}
-                        {% endfor %}
-                        </span>
-					</p>
+					<div>
+						<small class="d-block text-muted">
+							In <span class="catlist">
+							{% for category in page.categories %}
+								<a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
+							{% endfor %}
+							<span class="sep"> : Topics:</span> 
+							{% for tag in page.tags %}
+								{% include post-tags.html%}
+							{% endfor %}
+							</span>
+						</small>
+					</div>
 				</div>
 
                 {% if page.image %}
