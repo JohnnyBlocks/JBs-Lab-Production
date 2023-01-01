@@ -1,5 +1,5 @@
 <div>        
-    <small class="d-block text-muted">Contact Me:&nbsp;</small>  
+    <small class="d-block text-muted">Contact Me:&nbsp; 
     {% assign i = 0 %}     
     {% for social_list in author.social %}
         {% assign social = social_list[1] %}
@@ -7,4 +7,5 @@
         {% if i == 0 %}<span class="excerpt">|</span> &nbsp;{% endif %}
         {% assign i = i | plus:1 %}    
     {% endfor %}
+    </small> 
 </div> 
