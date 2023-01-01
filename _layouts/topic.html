@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
+{% if page.image != nil %}
 <div class="container mb-2">
-    <img src="{{ page.image }}" title="{{ page.alt }}" style="max-height: 150px;" style="mb-4">
+    <img src="{{ page.image }}" title="{{ page.alt }}" style="max-height: 150px;" class="mb-4">
 </div>
+{% endif %}
 <div class="container">
     <div class="row justify-content-center">
 
