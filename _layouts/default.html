@@ -83,7 +83,15 @@
     <!-- Footer -->
     <footer class="bg-white border-top p-3 text-muted small">
         {% include topic-bar.html %}
-        <div class="container">
+<div class="container">
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+</script>
         <div class="row align-items-center justify-content-between">
             <div>
                 <span class="navbar-brand mr-2 mb-0"><strong>{{site.title}}</strong></span>
