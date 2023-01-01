@@ -13,4 +13,4 @@
 
 
 {% assign current_cat = page.dir | split: "/" %}
-<pre>{{ current_cat | jsonify }}</pre>
+<pre>{{ current_cat[1] }}</pre>
