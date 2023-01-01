@@ -1,21 +1,17 @@
 ---
-title: "Welcome to the Laboratory"
 layout: default
-permalink: /the-lab/index.html
 ---
-
-<i class="fab fa-gamepad-modern"></i> [Privacy Policy]( {{site.baseurl}}/privacy-policy.html)
-
 <div class="container">
     <div class="row justify-content-center">
 
         <div class="col-md-8">
           <h4 class="font-weight-bold spanborder"><span>{{ page.title }}</span></h4>
-
           
-          {% assign posts = site.posts | where: "categories", "The-Lab" %}
+          {% assign posts = site.posts | where: "categories", page.section %}
           {% for post in posts %}
             {% include main-loop-card.html %}
+          {% else %}
+            There are no Guides.
           {% endfor %} 
 
         </div>
