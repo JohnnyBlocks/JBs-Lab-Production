@@ -2,14 +2,14 @@
 author: JohnnyBlocks
 title:  Education must also train one for quick, resolute and effective thinking.
 category: How-To
-permalink: /:categories/clean-tts-soundpack-teamspeak.html
+permalink: /:categories/education-must-also-train-one.html
 image: assets/images/neofetch-202212.png
 beforetoc: "Markdown editor is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post."
 toc: true
 ---
 There are lots of powerful things you can do with the Markdown editor
 
-If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
+If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!<!--more-->
 
 As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.
 
@@ -21,7 +21,6 @@ As well as bold and italics, you can also use some other special formatting in M
 + ~~strike through~~
 + ==highlight==
 + \*escaped characters\*
-
 
 ## Writing code blocks
 
