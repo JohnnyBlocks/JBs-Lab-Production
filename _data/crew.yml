@@ -15,7 +15,7 @@ JohnnyBlocks:
       icon:         fab fa-github
       url:          https://github.com/JohnnyBlocks
     twitch:
-      icon:         fa fa-twitch
+      icon:         fab-fa-twitch
       url:          https://www.twitch.tv/JohnnyBlocks_
     reddit:
       icon:         fab fa-reddit
