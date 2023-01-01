@@ -8,28 +8,20 @@ layout: default
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
 				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
 					<p class="text-uppercase font-weight-bold">
-                        <span class="catlist">
+                        <span class="catlist"> In:
 						{% for category in page.categories %}
-                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category  }}</a><span class="sep">, </span>
+                          <a class="sscroll text-danger" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category  }}</a><span class="sep">, </span>
                         {% endfor %}
+						Topics:
 						{% for tag in page.tags %}
-                          <a class="sscroll text-danger" href="{{site.baseurl}}/topics.html#{{ tag | downcase }}">{{ tag }}</a><span class="sep">, </span>
+                          {% include post-tags.html %}
                         {% endfor %}
                         </span>
 					</p>
-					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
-					{% if page.author %}				
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>				
 					<div class="row mt-5">
-						<div class="col-md-2 align-self-center">
-							<img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
-						</div>
-						<div class="col-md-10">		
-							<h5 class="font-weight-bold">Written by {{ author.name }}</h5>
-							{{ author.tagline }}	
-							{% include social.html %}				
-						</div>
-					</div>				
-                {% endif %}
+						{% include post-author.html %}
+					</div>	
 				</div>
 
                 {% if page.image %}
@@ -111,18 +103,7 @@ layout: default
             
             
              <!-- Author Box -->
-                {% if page.author %}				
-				<div class="row mt-5">
-					<div class="col-md-2 align-self-center">
-                        <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
-					</div>
-					<div class="col-md-10">		
-                        <h5 class="font-weight-bold">Written by {{ author.name }}</h5>
-						{{ author.tagline }}	
-						{% include social.html %}				
-					</div>
-				</div>				
-                {% endif %}
+			 {% include post-author.html %}
             
             <!-- Comments -->
             {% if page.comments != false %}

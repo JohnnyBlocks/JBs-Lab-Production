@@ -1,0 +1,10 @@
+<div class="row mt-5">
+    <div class="col-md-2 align-self-center">
+        <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
+    </div>
+    <div class="col-md-10">		
+        <h5 class="font-weight-bold">Written by {{ author.name }}</h5>
+        {{ author.tagline }}	
+        {% include social.html %}				
+    </div>
+</div>		
