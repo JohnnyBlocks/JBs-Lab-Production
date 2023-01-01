@@ -2,6 +2,9 @@ body {
 	overflow-x:hidden;
 	padding-top:69.75px;
 }
+.serif {
+	font-family: Georgia,Times,"Times New Roman",serif;
+}
 .auth-img {
 	float:left;margin-right:20px;
 }
@@ -296,7 +299,6 @@ a.text-dark:hover {
 		right:0;
 	}
     .jumbotron-home h1 {
-        font-family: Georgia,Times,"Times New Roman",serif;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.1;
