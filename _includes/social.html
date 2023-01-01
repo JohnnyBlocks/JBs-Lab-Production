@@ -4,7 +4,7 @@
     {% for social_list in author.social %}
         {% assign social = social_list[1] %}
         <a target="_blank" href="{{ social.url }}" class="text-dark"><i class="{{ social.icon }}" aria-hidden="true"></i></a> &nbsp;
-        {% if i == 0 %}| &nbsp;{% endif %}
+        {% if i == 0 %}<span class="excerpt">|</span> &nbsp;{% endif %}
         {% assign i = i | plus:1 %}    
     {% endfor %}
 </div>
