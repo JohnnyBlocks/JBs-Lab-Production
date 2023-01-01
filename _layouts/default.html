@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{page.title}} | {{site.title}}</title>
-    <meta name="description" content="{{site.description}}">
+    <title>{{page.title | strip_html}} | {{site.title | strip_html}}</title>
+    <meta name="description" content="{{site.description | strip_html}}">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="JohnnyBlocks">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -86,7 +86,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="mt-2">
-                    <span>SteamDeck & Computer Gaming : 
+                    <span>SteamDeck &amp; Computer Gaming : 
                         <a class="text-dark" href="{{ site.baseurl }}/how-to/index.html">Guides</a>,  
                         <a class="text-dark" href="{{ site.baseurl }}/reviews/index.html">Reviews</a>, 
                         <a class="text-dark" href="{{ site.baseurl }}/stories/index.html">Thoughts &amp; Stories</a></span>
