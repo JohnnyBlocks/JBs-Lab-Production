@@ -7,9 +7,9 @@ permalink: /lab-crew/index.html
 <div class="container">
 <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
-    {% assing author_list = site.data.crew  | where:"active",true %}   
+    {% assign author_list = site.data.crew  | where:"active",true %}   
         {% for author in author_list%}
-        
+        {% assign author = author_list[1]  %}
         <div class="col-lg-6 mb-4">
             <div class="p-4 border rounded">
             <div class="row">
