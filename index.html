@@ -31,7 +31,7 @@ pagination:
             {% for category in latest_post.categories %}
                 <a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
             {% endfor %}
-            <span class="sep"> : Topics:</span> 
+                <span class="sep"> : Topics:</span> 
             {% for tag in latest_post.tags %}
                 {% include post-tags.html%}
             {% endfor %}
