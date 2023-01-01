@@ -716,7 +716,7 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 	display:inline-block;
 	padding-bottom:20px;
 	margin-bottom:-1px;
-	color: rgba(0,0,0,0.59);
+	color: #6c757d;
 }
 .a2a_default_style .a2a_svg {
 	border-radius:50% !important;
