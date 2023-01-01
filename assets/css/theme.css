@@ -714,7 +714,7 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 .spanborder span {
 	border-bottom:1px solid rgba(0,0,0,0.44);
 	display:inline-block;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	margin-bottom:-1px;
 	color: #6c757d;
 }
