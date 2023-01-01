@@ -1361,7 +1361,7 @@ pre {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .form-control {
       transition: none; } }
   .form-control::-ms-expand {
@@ -1718,7 +1718,7 @@ textarea.form-control {
   line-height: 1.6;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .btn {
       transition: none; } }
   .btn:hover, .btn:focus {
@@ -2513,7 +2513,7 @@ input[type="button"].btn-block {
 
 .fade {
   transition: opacity 0.15s linear; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .fade {
       transition: none; } }
   .fade:not(.show) {
@@ -2527,7 +2527,7 @@ input[type="button"].btn-block {
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .collapsing {
       transition: none; } }
 
@@ -3145,7 +3145,7 @@ input[type="button"].btn-block {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
             appearance: none; }
-    @media screen and (prefers-reduced-motion: reduce) {
+    @media screen and (prefers-reduced-motion: no-preference) {
       .custom-range::-webkit-slider-thumb {
         transition: none; } }
     .custom-range::-webkit-slider-thumb:active {
@@ -3167,7 +3167,7 @@ input[type="button"].btn-block {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
          appearance: none; }
-    @media screen and (prefers-reduced-motion: reduce) {
+    @media screen and (prefers-reduced-motion: no-preference) {
       .custom-range::-moz-range-thumb {
         transition: none; } }
     .custom-range::-moz-range-thumb:active {
@@ -3191,7 +3191,7 @@ input[type="button"].btn-block {
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none; }
-    @media screen and (prefers-reduced-motion: reduce) {
+    @media screen and (prefers-reduced-motion: no-preference) {
       .custom-range::-ms-thumb {
         transition: none; } }
     .custom-range::-ms-thumb:active {
@@ -3216,7 +3216,7 @@ input[type="button"].btn-block {
 .custom-file-label,
 .custom-select {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .custom-control-label::before,
     .custom-file-label,
     .custom-select {
@@ -4196,7 +4196,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: #03a87c;
   transition: width 0.6s ease; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .progress-bar {
       transition: none; } }
 
@@ -4495,7 +4495,7 @@ button.close {
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     -webkit-transform: translate(0, -25%);
             transform: translate(0, -25%); }
-    @media screen and (prefers-reduced-motion: reduce) {
+    @media screen and (prefers-reduced-motion: no-preference) {
       .modal.fade .modal-dialog {
         transition: none; } }
   .modal.show .modal-dialog {
@@ -4835,7 +4835,7 @@ button.close {
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease; }
-  @media screen and (prefers-reduced-motion: reduce) {
+  @media screen and (prefers-reduced-motion: no-preference) {
     .carousel-item.active,
     .carousel-item-next,
     .carousel-item-prev {
