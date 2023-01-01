@@ -1,5 +1,5 @@
 JohnnyBlocks:
-  active:         True
+  active:         true
   name:           JohnnyBlocks
   avatar:         assets/icons/JB.png
   tagline:        "Never Be Game Over"  
@@ -43,7 +43,7 @@ JohnnyBlocks:
       url:          https://JohnnyBlocks.com
       
 Test:
-  active:         False
+  active:         false
   name:           Testy McTester
   avatar:         assets/icons/beaker-4-512.png
   tagline:        "I am a test record."  
