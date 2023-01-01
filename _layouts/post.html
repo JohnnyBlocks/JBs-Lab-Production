@@ -10,17 +10,6 @@ layout: default
 					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>				
 					<div class="row mt-5">
 						{% include post-author.html %}
-						<small class="d-block text-muted">
-							In <span class="catlist">
-							{% for category in page.categories %}
-								<a class="text-dark" href="{{site.baseurl}}/{{ category | downcase }}/index.html#">{{ category }}</a>	
-							{% endfor %}
-							<span class="sep"> : Topics:</span> 
-							{% for tag in page.tags %}
-								{% include post-tags.html%}
-							{% endfor %}
-							</span>
-						</small>
 					</div>	
 					<div>
 							
