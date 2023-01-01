@@ -1,4 +1,5 @@
 JohnnyBlocks:
+  active:         True
   name:           JohnnyBlocks
   avatar:         assets/icons/JB.png
   tagline:        "Never Be Game Over"  
@@ -13,9 +14,12 @@ JohnnyBlocks:
     github:
       icon:         fab fa-github
       url:          https://github.com/JohnnyBlocks
+    twitch:
+      icon:         <i class="fa-brands fa-twitch"></i>
+      url:          https://www.twitch.tv/JohnnyBlocks_
     reddit:
       icon:         fab fa-reddit
-      url:          https://www.reddit.com/user/YoYo-Pete
+      url:          https://www.reddit.com/r/JohnnyBlocks
     discord:
       icon:         fab fa-discord
       url:          https://discordapp.com/users/121071541164310529
@@ -39,6 +43,7 @@ JohnnyBlocks:
       url:          https://JohnnyBlocks.com
       
 Test:
+  active:         False
   name:           Testy McTester
   avatar:         assets/icons/beaker-4-512.png
   tagline:        "I am a test record."  
