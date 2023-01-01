@@ -10,3 +10,7 @@
     {% endfor %}
     </small> 
 </div> 
+
+
+{% assign current_cat = page.dir | split: "/" %}
+<pre>{{ current_cat | jsonify }}</pre>
