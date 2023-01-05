@@ -7,6 +7,11 @@
                 <h6 class="font-weight-bold">
                     <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
                 </h6>
+                {% if post.rating %}
+                    <div class="mb-2 mt-2 font-weight-normal">
+                    {% include star_rating_postbox.html %}
+                    </div>
+                {% endif %}
                 <small class="d-block text-muted">
                     In <span class="catlist">
                     {% for category in post.categories %}

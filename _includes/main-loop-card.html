@@ -3,6 +3,11 @@
 	<h2 class="mb-1 h4 font-weight-bold">
 	<a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
 	</h2>
+	{% if post.rating %}
+		<div class="mb-2 mt-2 font-weight-normal">
+		{% include star_rating_postbox.html %}
+		</div>
+	{% endif %}
 	<p class="excerpt">
 	   {{ post.excerpt  | strip_html | strip_newlines }}
 	</p>

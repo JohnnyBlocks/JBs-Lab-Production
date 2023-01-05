@@ -22,9 +22,15 @@ pagination:
     <h2 class="h4 font-weight-bold">
     <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
     </h2>
-    {%- comment -%} <p class="excerpt">
+    {% assign post = site.posts[0] %}
+    {% if post.rating %}
+        <div class="mb-2 mt-2 font-weight-normal">
+        {% include star_rating_postbox.html %}
+        </div>
+    {% endif %}
+    <p class="excerpt">
         {{ latest_post.excerpt | strip_html | strip_newlines }}
-    </p> {%- endcomment -%}
+    </p>
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
@@ -61,6 +67,12 @@ pagination:
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
+                    {% assign post = site.posts[1] %}
+                    {% if post.rating %}
+                        <div class="mb-2 mt-2 font-weight-normal">
+                        {% include star_rating_postbox.html %}
+                        </div>
+                    {% endif %}
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in second_post.categories %}
@@ -92,6 +104,12 @@ pagination:
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
+                    {% assign post = site.posts[2] %}
+                    {% if post.rating %}
+                        <div class="mb-2 mt-2 font-weight-normal">
+                        {% include star_rating_postbox.html %}
+                        </div>
+                    {% endif %}
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in third_post.categories %}
@@ -123,6 +141,12 @@ pagination:
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
+                    {% assign post = site.posts[3] %}
+                    {% if post.rating %}
+                        <div class="mb-2 mt-2 font-weight-normal">
+                        {% include star_rating_postbox.html %}
+                        </div>
+                    {% endif %}
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in fourth_post.categories %}
@@ -152,6 +176,11 @@ pagination:
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
                 <h1 class="mb-3">{{post.title}}</h1>
+                {% if post.rating %}
+                <div class="rating mb-4 d-flex align-items-center">
+                    <strong class="mr-1">JB's Lab Rating:</strong> {% include star_rating_postbox.html %}
+                </div>
+                {% endif %}
                 <p class="mb-3 lead">
                     {{ post.excerpt | strip_html | strip_newlines }}
                 </p>
