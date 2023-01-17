@@ -6,9 +6,8 @@ tags: [ 'JSAUX','SteamDeck' ]
 permalink: /:categories/jsaux-180-adapter.html
 image: assets/images/jsaux-180.webp
 ---
-
-We've been waiting and January 15th is the date.  
-Amazon will have the [JSAUX 180 USB-C Adapter](https://amzn.to/3ZhnBit) for order.  
+ 
+The [JSAUX 180 USB-C Adapter](https://amzn.to/3ZhnBit) is available for order on Amazon.
 No more awkward cables.<!--more-->
 
 ## Such Convenience
@@ -65,3 +64,4 @@ Widely work with most Type C devices. For Steam Deck, Switch, MacBook Pro, Surfa
 
 <a href="https://www.amazon.com/gp/product/B0BNBK7BR9?smid=A20J3ITGSOMSJG&th=1&linkCode=li2&tag=johnnyblocks.com-20&linkId=1fcdf84d0353fa5d4c1825d4023698f0&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BNBK7BR9&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=johnnyblocks.com-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=johnnyblocks.com-20&language=en_US&l=li2&o=1&a=B0BNBK7BR9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+<sup>Disclaimer: Amazon links are my affiliate links to keep the lights on for JB's Lab.</sup>
