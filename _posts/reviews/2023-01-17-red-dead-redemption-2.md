@@ -110,5 +110,4 @@ I recommend purchasing from Steam directly as that makes everything easiest on S
 
 ###### Join Me
 
-Join me at my [Steam Group](https://steamcommunity.com/groups/JBs-Lab) or [Reddit](https://reddit.com/r/JohnnyBlocks) and check out my [Steam Review of RDR2](https://steamcommunity.com/id/JohnnyBlocks/recommended/1174180) as well as other games on my [Steam Curator Page](https://store.steampowered.com/curator/43397289-JB%2527s-Lab/). \
-Likewise click on any of the screen shots above to view them at my steam profile.
+Join me at my [Steam Group](https://steamcommunity.com/groups/JBs-Lab) or [Reddit](https://reddit.com/r/JohnnyBlocks) and check out my [Steam Review of RDR2](https://steamcommunity.com/id/JohnnyBlocks/recommended/1174180) as well as other games on my [Steam Curator Page](https://store.steampowered.com/curator/43397289-JB%2527s-Lab/).  Likewise click on any of the screen shots above to view them at my steam profile.
