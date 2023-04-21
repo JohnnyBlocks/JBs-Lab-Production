@@ -2,7 +2,7 @@
 author: JohnnyBlocks
 category: How-To
 title: Add Video Streaming Services
-tags: [ SteamDeck ]
+tags: [ SteamDeck, Featured ]
 permalink: /:categories/add-video-streaming-services.html
 image: assets/images/streaming-services.jpg
 ---
