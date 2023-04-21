@@ -87,7 +87,7 @@ Note:  You may alternately select '**Microsoft Edge**' at this step.
     There is a '**Disney+ for SteamDeck**' controller configuration that I am using.
 
 4. Add Icon, Banner, and Heroes for Disney+ to make it look like an offical app.  
-<img src="{{ site.baseurl }}/assets/images/add_nonsteam_6.jpg)
+<img src="({{ site.baseurl }}/assets/images/add_nonsteam_6.jpg)
 
     This can be done via [SteamGridDB](https://www.steamgriddb.com/) manually, via the [SGDBoop](https://www.steamgriddb.com/boop) app, or via [BoilR](https://github.com/PhilipK/BoilR)
     This site will have guides linked here once I have time to write them up.
